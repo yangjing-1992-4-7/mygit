@@ -1,0 +1,1371 @@
+---------------------------------------------------------------
+[2021-03-10T16:57:06+08:00] ::1 GET localhost/yzn/attachment/attachments/index.html?page=1&limit=15
+[运行时间：0.036078s] [吞吐率：27.72req/s] [内存消耗：3,785.74kb] [文件加载：83]
+[ info ] [ LANG ] E:\UPUPW_AP7.0_64\htdocs\yzn\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'sec-ch-ua' => '"Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'sec-ch-ua-mobile' => '?0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36',
+  'sec-fetch-site' => 'same-origin',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-dest' => 'empty',
+  'referer' => 'http://localhost/yzn/attachment/attachments/index/menuid/23.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=3nnae0m2mvpitdp9uuan9d43v4; think___forward__=%2Fyzn%2Fcms%2Ffield%2Findex%2Fid%2F3.html%3Fpage%3D1%26limit%3D10',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '15',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000398s ] mysql:host=127.0.0.1;port=3306;dbname=yzn;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.003170s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000247s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_attachment` [ RunTime:0.002630s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` ORDER BY `id` DESC LIMIT 0,15 [ RunTime:0.000483s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_attachment` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000209s ]
+---------------------------------------------------------------
+[2021-03-10T16:57:07+08:00] ::1 GET localhost/yzn/admin/index/index.html
+[运行时间：0.151872s] [吞吐率：6.58req/s] [内存消耗：4,367.76kb] [文件加载：94]
+[ info ] [ LANG ] E:\UPUPW_AP7.0_64\htdocs\yzn\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'sec-ch-ua' => '"Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"',
+  'sec-ch-ua-mobile' => '?0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'sec-fetch-site' => 'same-origin',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-dest' => 'document',
+  'referer' => 'http://localhost/yzn/admin/index/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=3nnae0m2mvpitdp9uuan9d43v4; think___forward__=%2Fyzn%2Fcms%2Ffield%2Findex%2Fid%2F3.html%3Fpage%3D1%26limit%3D10',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\UPUPW_AP7.0_64\htdocs\yzn\application\admin\view\index\index.html [ array (
+  0 => 'userInfo',
+  1 => 'SUBMENU_CONFIG',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000425s ] mysql:host=127.0.0.1;port=3306;dbname=yzn;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.003116s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000251s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_menu` [ RunTime:0.003082s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 0  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000361s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 1  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000399s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 3  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000350s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 10  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000427s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 11  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 24  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000327s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 25  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000267s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 26  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000268s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 13  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000254s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 14  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000507s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 27  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000306s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 28  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000369s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 29  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000272s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 23  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000329s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 30  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000271s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 31  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000622s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 32  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000446s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 33  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000376s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 34  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000321s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 15  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000426s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 16  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000449s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 18  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000388s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 19  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000560s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 21  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000412s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 17  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000474s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 22  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000485s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 48  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000432s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 49  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000336s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 50  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000326s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 51  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000411s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 20  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000518s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 12  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000327s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 72  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000512s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 73  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000364s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 56  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000318s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 57  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000465s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 58  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000712s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 59  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000495s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 60  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000291s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 61  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000380s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 62  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000437s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 63  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000403s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 64  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000321s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 65  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000297s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 66  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000281s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 67  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000319s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 68  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000401s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 69  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000382s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 70  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000483s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 71  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000412s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 74  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000402s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 75  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000398s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 76  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 77  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000377s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 78  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000493s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 79  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000389s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 80  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000301s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 81  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000586s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 82  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000330s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 105  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000327s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 106  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000489s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 98  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000409s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 99  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000411s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 101  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000355s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 114  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000322s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 115  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000244s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 116  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000230s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 103  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000250s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 104  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000284s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 110  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000358s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 111  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000265s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 112  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000234s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 113  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000486s ]
+---------------------------------------------------------------
+[2021-03-10T16:57:07+08:00] ::1 GET localhost/yzn/admin/main/index.html
+[运行时间：0.057344s] [吞吐率：17.44req/s] [内存消耗：4,107.27kb] [文件加载：91]
+[ info ] [ LANG ] E:\UPUPW_AP7.0_64\htdocs\yzn\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'sec-ch-ua' => '"Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"',
+  'sec-ch-ua-mobile' => '?0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'sec-fetch-site' => 'same-origin',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-dest' => 'iframe',
+  'referer' => 'http://localhost/yzn/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=3nnae0m2mvpitdp9uuan9d43v4; think___forward__=%2Fyzn%2Fcms%2Ffield%2Findex%2Fid%2F3.html%3Fpage%3D1%26limit%3D10',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\UPUPW_AP7.0_64\htdocs\yzn\application\admin\view\main\index.html [ array (
+  0 => 'userInfo',
+  1 => 'last_login_time',
+  2 => 'sys_info',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000502s ] mysql:host=127.0.0.1;port=3306;dbname=yzn;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.003341s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000272s ]
+[ sql ] [ SQL ] SELECT VERSION() as version [ RunTime:0.000167s ]
+---------------------------------------------------------------
+[2021-03-10T16:57:10+08:00] ::1 GET localhost/yzn/attachment/attachments/index/menuid/23.html
+[运行时间：0.035351s] [吞吐率：28.29req/s] [内存消耗：4,148.13kb] [文件加载：88]
+[ info ] [ LANG ] E:\UPUPW_AP7.0_64\htdocs\yzn\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'sec-ch-ua' => '"Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"',
+  'sec-ch-ua-mobile' => '?0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'sec-fetch-site' => 'same-origin',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-dest' => 'iframe',
+  'referer' => 'http://localhost/yzn/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=3nnae0m2mvpitdp9uuan9d43v4; think___forward__=%2Fyzn%2Fcms%2Ffield%2Findex%2Fid%2F3.html%3Fpage%3D1%26limit%3D10',
+)
+[ info ] [ PARAM ] array (
+  'menuid' => '23',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\UPUPW_AP7.0_64\htdocs\yzn\application\attachment\view\attachments\index.html [ array (
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000413s ] mysql:host=127.0.0.1;port=3306;dbname=yzn;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.002854s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000238s ]
+---------------------------------------------------------------
+[2021-03-10T16:57:10+08:00] ::1 GET localhost/yzn/attachment/attachments/index.html?page=1&limit=15
+[运行时间：0.041244s] [吞吐率：24.25req/s] [内存消耗：3,785.80kb] [文件加载：83]
+[ info ] [ LANG ] E:\UPUPW_AP7.0_64\htdocs\yzn\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'sec-ch-ua' => '"Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'sec-ch-ua-mobile' => '?0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36',
+  'sec-fetch-site' => 'same-origin',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-dest' => 'empty',
+  'referer' => 'http://localhost/yzn/attachment/attachments/index/menuid/23.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=3nnae0m2mvpitdp9uuan9d43v4; think___forward__=%2Fyzn%2Fcms%2Ffield%2Findex%2Fid%2F3.html%3Fpage%3D1%26limit%3D10',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '15',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000441s ] mysql:host=127.0.0.1;port=3306;dbname=yzn;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.003213s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000374s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_attachment` [ RunTime:0.003411s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` ORDER BY `id` DESC LIMIT 0,15 [ RunTime:0.000402s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_attachment` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000196s ]
+---------------------------------------------------------------
+[2021-03-10T16:57:46+08:00] ::1 GET localhost/yzn/attachment/attachments/index/menuid/23.html
+[运行时间：0.038430s] [吞吐率：26.02req/s] [内存消耗：4,148.20kb] [文件加载：88]
+[ info ] [ LANG ] E:\UPUPW_AP7.0_64\htdocs\yzn\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'sec-ch-ua' => '"Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"',
+  'sec-ch-ua-mobile' => '?0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'sec-fetch-site' => 'same-origin',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-dest' => 'iframe',
+  'referer' => 'http://localhost/yzn/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=3nnae0m2mvpitdp9uuan9d43v4; think___forward__=%2Fyzn%2Fcms%2Ffield%2Findex%2Fid%2F3.html%3Fpage%3D1%26limit%3D10',
+)
+[ info ] [ PARAM ] array (
+  'menuid' => '23',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\UPUPW_AP7.0_64\htdocs\yzn\application\attachment\view\attachments\index.html [ array (
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000410s ] mysql:host=127.0.0.1;port=3306;dbname=yzn;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.003029s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000261s ]
+---------------------------------------------------------------
+[2021-03-10T16:57:46+08:00] ::1 GET localhost/yzn/attachment/attachments/index.html?page=1&limit=15
+[运行时间：0.034562s] [吞吐率：28.93req/s] [内存消耗：3,785.80kb] [文件加载：83]
+[ info ] [ LANG ] E:\UPUPW_AP7.0_64\htdocs\yzn\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'sec-ch-ua' => '"Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'sec-ch-ua-mobile' => '?0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36',
+  'sec-fetch-site' => 'same-origin',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-dest' => 'empty',
+  'referer' => 'http://localhost/yzn/attachment/attachments/index/menuid/23.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=3nnae0m2mvpitdp9uuan9d43v4; think___forward__=%2Fyzn%2Fcms%2Ffield%2Findex%2Fid%2F3.html%3Fpage%3D1%26limit%3D10',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '15',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000422s ] mysql:host=127.0.0.1;port=3306;dbname=yzn;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.002878s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000230s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_attachment` [ RunTime:0.002584s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` ORDER BY `id` DESC LIMIT 0,15 [ RunTime:0.000342s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_attachment` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000142s ]
+---------------------------------------------------------------
+[2021-03-10T16:58:28+08:00] ::1 GET localhost/yzn/attachment/attachments/index/menuid/23.html
+[运行时间：0.031362s] [吞吐率：31.89req/s] [内存消耗：4,148.20kb] [文件加载：88]
+[ info ] [ LANG ] E:\UPUPW_AP7.0_64\htdocs\yzn\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'sec-ch-ua' => '"Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"',
+  'sec-ch-ua-mobile' => '?0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'sec-fetch-site' => 'same-origin',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-dest' => 'iframe',
+  'referer' => 'http://localhost/yzn/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=3nnae0m2mvpitdp9uuan9d43v4; think___forward__=%2Fyzn%2Fcms%2Ffield%2Findex%2Fid%2F3.html%3Fpage%3D1%26limit%3D10',
+)
+[ info ] [ PARAM ] array (
+  'menuid' => '23',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\UPUPW_AP7.0_64\htdocs\yzn\application\attachment\view\attachments\index.html [ array (
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000503s ] mysql:host=127.0.0.1;port=3306;dbname=yzn;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.003048s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000244s ]
+---------------------------------------------------------------
+[2021-03-10T16:58:28+08:00] ::1 GET localhost/yzn/attachment/attachments/index.html?page=1&limit=15
+[运行时间：0.034830s] [吞吐率：28.71req/s] [内存消耗：3,785.80kb] [文件加载：83]
+[ info ] [ LANG ] E:\UPUPW_AP7.0_64\htdocs\yzn\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'sec-ch-ua' => '"Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'sec-ch-ua-mobile' => '?0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36',
+  'sec-fetch-site' => 'same-origin',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-dest' => 'empty',
+  'referer' => 'http://localhost/yzn/attachment/attachments/index/menuid/23.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=3nnae0m2mvpitdp9uuan9d43v4; think___forward__=%2Fyzn%2Fcms%2Ffield%2Findex%2Fid%2F3.html%3Fpage%3D1%26limit%3D10',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '15',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000414s ] mysql:host=127.0.0.1;port=3306;dbname=yzn;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.002890s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000274s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_attachment` [ RunTime:0.002943s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` ORDER BY `id` DESC LIMIT 0,15 [ RunTime:0.000375s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_attachment` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000148s ]
+---------------------------------------------------------------
+[2021-03-10T16:59:28+08:00] ::1 GET localhost/yzn/attachment/attachments/index/menuid/23.html
+[运行时间：0.032441s] [吞吐率：30.83req/s] [内存消耗：4,152.20kb] [文件加载：88]
+[ info ] [ LANG ] E:\UPUPW_AP7.0_64\htdocs\yzn\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'sec-ch-ua' => '"Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"',
+  'sec-ch-ua-mobile' => '?0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'sec-fetch-site' => 'same-origin',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-dest' => 'iframe',
+  'referer' => 'http://localhost/yzn/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=3nnae0m2mvpitdp9uuan9d43v4; think___forward__=%2Fyzn%2Fcms%2Ffield%2Findex%2Fid%2F3.html%3Fpage%3D1%26limit%3D10',
+)
+[ info ] [ PARAM ] array (
+  'menuid' => '23',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\UPUPW_AP7.0_64\htdocs\yzn\application\attachment\view\attachments\index.html [ array (
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000438s ] mysql:host=127.0.0.1;port=3306;dbname=yzn;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.003073s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000242s ]
+---------------------------------------------------------------
+[2021-03-10T16:59:28+08:00] ::1 GET localhost/yzn/attachment/attachments/index.html?page=1&limit=15
+[运行时间：0.041502s] [吞吐率：24.10req/s] [内存消耗：3,785.80kb] [文件加载：83]
+[ info ] [ LANG ] E:\UPUPW_AP7.0_64\htdocs\yzn\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'sec-ch-ua' => '"Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'sec-ch-ua-mobile' => '?0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36',
+  'sec-fetch-site' => 'same-origin',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-dest' => 'empty',
+  'referer' => 'http://localhost/yzn/attachment/attachments/index/menuid/23.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=3nnae0m2mvpitdp9uuan9d43v4; think___forward__=%2Fyzn%2Fcms%2Ffield%2Findex%2Fid%2F3.html%3Fpage%3D1%26limit%3D10',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '15',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000413s ] mysql:host=127.0.0.1;port=3306;dbname=yzn;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.002969s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000236s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_attachment` [ RunTime:0.004791s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` ORDER BY `id` DESC LIMIT 0,15 [ RunTime:0.000632s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_attachment` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000303s ]
+---------------------------------------------------------------
+[2021-03-10T16:59:30+08:00] ::1 POST localhost/yzn/attachment/attachments/export.html
+[运行时间：0.035772s] [吞吐率：27.95req/s] [内存消耗：3,809.47kb] [文件加载：83]
+[ info ] [ LANG ] E:\UPUPW_AP7.0_64\htdocs\yzn\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'sec-ch-ua' => '"Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'sec-ch-ua-mobile' => '?0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36',
+  'origin' => 'http://localhost',
+  'sec-fetch-site' => 'same-origin',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-dest' => 'empty',
+  'referer' => 'http://localhost/yzn/attachment/attachments/index/menuid/23.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=3nnae0m2mvpitdp9uuan9d43v4; think___forward__=%2Fyzn%2Fcms%2Ffield%2Findex%2Fid%2F3.html%3Fpage%3D1%26limit%3D10',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000439s ] mysql:host=127.0.0.1;port=3306;dbname=yzn;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.003011s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000251s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_attachment` [ RunTime:0.002906s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` ORDER BY `id` DESC [ RunTime:0.000679s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_attachment` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000424s ]
+---------------------------------------------------------------
+[2021-03-10T17:00:00+08:00] ::1 POST localhost/yzn/attachment/attachments/export.html
+[运行时间：0.037193s] [吞吐率：26.89req/s] [内存消耗：3,809.47kb] [文件加载：83]
+[ info ] [ LANG ] E:\UPUPW_AP7.0_64\htdocs\yzn\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'sec-ch-ua' => '"Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'sec-ch-ua-mobile' => '?0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36',
+  'origin' => 'http://localhost',
+  'sec-fetch-site' => 'same-origin',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-dest' => 'empty',
+  'referer' => 'http://localhost/yzn/attachment/attachments/index/menuid/23.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=3nnae0m2mvpitdp9uuan9d43v4; think___forward__=%2Fyzn%2Fcms%2Ffield%2Findex%2Fid%2F3.html%3Fpage%3D1%26limit%3D10',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000456s ] mysql:host=127.0.0.1;port=3306;dbname=yzn;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000237s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_attachment` [ RunTime:0.002604s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_attachment` ORDER BY `id` DESC [ RunTime:0.000677s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `yzn_attachment` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.000156s ]
+---------------------------------------------------------------
+[2021-03-10T17:00:38+08:00] ::1 GET localhost/yzn/admin/config/setting/menuid/13.html
+[运行时间：0.052625s] [吞吐率：19.00req/s] [内存消耗：4,164.79kb] [文件加载：92]
+[ info ] [ LANG ] E:\UPUPW_AP7.0_64\htdocs\yzn\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'sec-ch-ua' => '"Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"',
+  'sec-ch-ua-mobile' => '?0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'sec-fetch-site' => 'same-origin',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-dest' => 'iframe',
+  'referer' => 'http://localhost/yzn/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=3nnae0m2mvpitdp9uuan9d43v4; think___forward__=%2Fyzn%2Fcms%2Ffield%2Findex%2Fid%2F3.html%3Fpage%3D1%26limit%3D10',
+)
+[ info ] [ PARAM ] array (
+  'menuid' => '13',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\UPUPW_AP7.0_64\htdocs\yzn\application\admin\view\config\setting.html [ array (
+  0 => 'groupArray',
+  1 => 'fieldList',
+  2 => 'group',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000592s ] mysql:host=127.0.0.1;port=3306;dbname=yzn;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.003401s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000304s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_config` [ RunTime:0.003321s ]
+[ sql ] [ SQL ] SELECT `name`,`title`,`remark`,`type`,`value`,`options` FROM `yzn_config` WHERE  `group` = 'base'  AND `status` = 1 ORDER BY `listorder`,`id` DESC [ RunTime:0.000318s ]
+---------------------------------------------------------------
+[2021-03-10T17:00:40+08:00] ::1 GET localhost/yzn/admin/menu/index/menuid/14.html
+[运行时间：0.048927s] [吞吐率：20.44req/s] [内存消耗：4,196.88kb] [文件加载：92]
+[ info ] [ LANG ] E:\UPUPW_AP7.0_64\htdocs\yzn\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'sec-ch-ua' => '"Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"',
+  'sec-ch-ua-mobile' => '?0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'sec-fetch-site' => 'same-origin',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-dest' => 'iframe',
+  'referer' => 'http://localhost/yzn/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=3nnae0m2mvpitdp9uuan9d43v4; think___forward__=%2Fyzn%2Fcms%2Ffield%2Findex%2Fid%2F3.html%3Fpage%3D1%26limit%3D10',
+)
+[ info ] [ PARAM ] array (
+  'menuid' => '14',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\UPUPW_AP7.0_64\htdocs\yzn\application\admin\view\menu\index.html [ array (
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000530s ] mysql:host=127.0.0.1;port=3306;dbname=yzn;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.008195s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000630s ]
+---------------------------------------------------------------
+[2021-03-10T17:00:40+08:00] ::1 GET localhost/yzn/admin/menu/index.html?page=1&limit=10
+[运行时间：0.040878s] [吞吐率：24.46req/s] [内存消耗：3,938.50kb] [文件加载：88]
+[ info ] [ LANG ] E:\UPUPW_AP7.0_64\htdocs\yzn\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'sec-ch-ua' => '"Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'sec-ch-ua-mobile' => '?0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36',
+  'sec-fetch-site' => 'same-origin',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-dest' => 'empty',
+  'referer' => 'http://localhost/yzn/admin/menu/index/menuid/14.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=3nnae0m2mvpitdp9uuan9d43v4; think___forward__=%2Fyzn%2Fcms%2Ffield%2Findex%2Fid%2F3.html%3Fpage%3D1%26limit%3D10',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000869s ] mysql:host=127.0.0.1;port=3306;dbname=yzn;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.004026s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000371s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_menu` [ RunTime:0.003204s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` ORDER BY `listorder`,`id` DESC [ RunTime:0.000745s ]
+---------------------------------------------------------------
+[2021-03-10T17:01:01+08:00] ::1 GET localhost/yzn/admin/menu/add.html?parentid=23
+[运行时间：0.039829s] [吞吐率：25.11req/s] [内存消耗：4,286.21kb] [文件加载：93]
+[ info ] [ LANG ] E:\UPUPW_AP7.0_64\htdocs\yzn\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'sec-ch-ua' => '"Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"',
+  'sec-ch-ua-mobile' => '?0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'sec-fetch-site' => 'same-origin',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-dest' => 'iframe',
+  'referer' => 'http://localhost/yzn/admin/menu/index/menuid/14.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=3nnae0m2mvpitdp9uuan9d43v4; think___forward__=%2Fyzn%2Fcms%2Ffield%2Findex%2Fid%2F3.html%3Fpage%3D1%26limit%3D10',
+)
+[ info ] [ PARAM ] array (
+  'parentid' => '23',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\UPUPW_AP7.0_64\htdocs\yzn\application\admin\view\menu\add.html [ array (
+  0 => 'select_categorys',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000437s ] mysql:host=127.0.0.1;port=3306;dbname=yzn;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.003005s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000265s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_menu` [ RunTime:0.003098s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` ORDER BY `listorder`,`id` DESC [ RunTime:0.000733s ]
+---------------------------------------------------------------
+[2021-03-10T17:01:35+08:00] ::1 POST localhost/yzn/admin/menu/add.html
+[运行时间：0.039281s] [吞吐率：25.46req/s] [内存消耗：3,976.07kb] [文件加载：92]
+[ info ] [ LANG ] E:\UPUPW_AP7.0_64\htdocs\yzn\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '144',
+  'sec-ch-ua' => '"Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'sec-ch-ua-mobile' => '?0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'http://localhost',
+  'sec-fetch-site' => 'same-origin',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-dest' => 'empty',
+  'referer' => 'http://localhost/yzn/admin/menu/add.html?parentid=23',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=3nnae0m2mvpitdp9uuan9d43v4; think___forward__=%2Fyzn%2Fcms%2Ffield%2Findex%2Fid%2F3.html%3Fpage%3D1%26limit%3D10',
+)
+[ info ] [ PARAM ] array (
+  'parentid' => '23',
+  'title' => '导出全部数据',
+  'app' => 'attachment',
+  'controller' => 'attachments',
+  'action' => 'export',
+  'parameter' => '',
+  'status' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000419s ] mysql:host=127.0.0.1;port=3306;dbname=yzn;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.002962s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000614s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_menu` [ RunTime:0.002883s ]
+[ sql ] [ SQL ] INSERT INTO `yzn_menu` (`parentid` , `title` , `app` , `controller` , `action` , `parameter` , `status`) VALUES (23 , '导出全部数据' , 'attachment' , 'attachments' , 'export' , '' , 1) [ RunTime:0.000263s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_adminlog` [ RunTime:0.002759s ]
+[ sql ] [ SQL ] INSERT INTO `yzn_adminlog` (`uid` , `status` , `info` , `get` , `ip` , `create_time`) VALUES (1 , 1 , '提示语:添加成功！' , '/yzn/admin/menu/add.html' , '0' , 1615366895) [ RunTime:0.000204s ]
+---------------------------------------------------------------
+[2021-03-10T17:01:37+08:00] ::1 GET localhost/yzn/admin/menu/index.html
+[运行时间：0.031181s] [吞吐率：32.07req/s] [内存消耗：4,195.88kb] [文件加载：92]
+[ info ] [ LANG ] E:\UPUPW_AP7.0_64\htdocs\yzn\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'sec-ch-ua' => '"Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"',
+  'sec-ch-ua-mobile' => '?0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'sec-fetch-site' => 'same-origin',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-dest' => 'iframe',
+  'referer' => 'http://localhost/yzn/admin/menu/add.html?parentid=23',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=3nnae0m2mvpitdp9uuan9d43v4; think___forward__=%2Fyzn%2Fcms%2Ffield%2Findex%2Fid%2F3.html%3Fpage%3D1%26limit%3D10',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\UPUPW_AP7.0_64\htdocs\yzn\application\admin\view\menu\index.html [ array (
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000370s ] mysql:host=127.0.0.1;port=3306;dbname=yzn;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.002884s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000238s ]
+---------------------------------------------------------------
+[2021-03-10T17:01:37+08:00] ::1 GET localhost/yzn/admin/menu/index.html?page=1&limit=10
+[运行时间：0.036845s] [吞吐率：27.14req/s] [内存消耗：3,938.80kb] [文件加载：88]
+[ info ] [ LANG ] E:\UPUPW_AP7.0_64\htdocs\yzn\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'sec-ch-ua' => '"Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'sec-ch-ua-mobile' => '?0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36',
+  'sec-fetch-site' => 'same-origin',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-dest' => 'empty',
+  'referer' => 'http://localhost/yzn/admin/menu/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=3nnae0m2mvpitdp9uuan9d43v4; think___forward__=%2Fyzn%2Fcms%2Ffield%2Findex%2Fid%2F3.html%3Fpage%3D1%26limit%3D10',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000423s ] mysql:host=127.0.0.1;port=3306;dbname=yzn;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.003066s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000240s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_menu` [ RunTime:0.003493s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` ORDER BY `listorder`,`id` DESC [ RunTime:0.000762s ]
+---------------------------------------------------------------
+[2021-03-10T17:01:39+08:00] ::1 GET localhost/yzn/admin/auth_manager/index/menuid/17.html
+[运行时间：0.036371s] [吞吐率：27.49req/s] [内存消耗：4,134.59kb] [文件加载：91]
+[ info ] [ LANG ] E:\UPUPW_AP7.0_64\htdocs\yzn\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'sec-ch-ua' => '"Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"',
+  'sec-ch-ua-mobile' => '?0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'sec-fetch-site' => 'same-origin',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-dest' => 'iframe',
+  'referer' => 'http://localhost/yzn/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=3nnae0m2mvpitdp9uuan9d43v4; think___forward__=%2Fyzn%2Fcms%2Ffield%2Findex%2Fid%2F3.html%3Fpage%3D1%26limit%3D10',
+)
+[ info ] [ PARAM ] array (
+  'menuid' => '17',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\UPUPW_AP7.0_64\htdocs\yzn\application\admin\view\auth_manager\index.html [ array (
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000396s ] mysql:host=127.0.0.1;port=3306;dbname=yzn;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.003177s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000265s ]
+---------------------------------------------------------------
+[2021-03-10T17:01:39+08:00] ::1 GET localhost/yzn/admin/auth_manager/index.html?page=1&limit=10
+[运行时间：0.037368s] [吞吐率：26.76req/s] [内存消耗：3,780.50kb] [文件加载：86]
+[ info ] [ LANG ] E:\UPUPW_AP7.0_64\htdocs\yzn\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'sec-ch-ua' => '"Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'sec-ch-ua-mobile' => '?0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36',
+  'sec-fetch-site' => 'same-origin',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-dest' => 'empty',
+  'referer' => 'http://localhost/yzn/admin/auth_manager/index/menuid/17.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=3nnae0m2mvpitdp9uuan9d43v4; think___forward__=%2Fyzn%2Fcms%2Ffield%2Findex%2Fid%2F3.html%3Fpage%3D1%26limit%3D10',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000546s ] mysql:host=127.0.0.1;port=3306;dbname=yzn;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.003019s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000256s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_auth_group` [ RunTime:0.002494s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_auth_group` WHERE  `module` = 'admin' ORDER BY `id` ASC [ RunTime:0.000267s ]
+---------------------------------------------------------------
+[2021-03-10T17:01:40+08:00] ::1 GET localhost/yzn/admin/auth_manager/access.html?title=%E7%BC%96%E8%BE%91&group_id=2
+[运行时间：0.057333s] [吞吐率：17.44req/s] [内存消耗：4,436.92kb] [文件加载：96]
+[ info ] [ LANG ] E:\UPUPW_AP7.0_64\htdocs\yzn\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'sec-ch-ua' => '"Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"',
+  'sec-ch-ua-mobile' => '?0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'sec-fetch-site' => 'same-origin',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-dest' => 'iframe',
+  'referer' => 'http://localhost/yzn/admin/auth_manager/index/menuid/17.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=3nnae0m2mvpitdp9uuan9d43v4; think___forward__=%2Fyzn%2Fcms%2Ffield%2Findex%2Fid%2F3.html%3Fpage%3D1%26limit%3D10',
+)
+[ info ] [ PARAM ] array (
+  'title' => '编辑',
+  'group_id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\UPUPW_AP7.0_64\htdocs\yzn\application\admin\view\auth_manager\managergroup.html [ array (
+  0 => 'group_id',
+  1 => 'json',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000429s ] mysql:host=127.0.0.1;port=3306;dbname=yzn;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.002840s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000234s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_menu` [ RunTime:0.002506s ]
+[ sql ] [ SQL ] SELECT `id` FROM `yzn_menu` WHERE  `status` = 0 [ RunTime:0.000311s ]
+[ sql ] [ SQL ] SELECT `id` FROM `yzn_menu` WHERE  `parentid` IN (107,83,100,102) [ RunTime:0.000213s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `id` NOT IN (107,83,100,102,108,84,85,86,87,88,89,90,91,92,93,94,95,96,97) ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000703s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_auth_rule` [ RunTime:0.002974s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_auth_rule` WHERE  `type` IN (1,2) ORDER BY `name` [ RunTime:0.000751s ]
+[ sql ] [ SQL ] UPDATE `yzn_auth_rule`  SET `name` = 'admin/config/add' , `title` = '新增配置' , `module` = 'admin' , `type` = 1 , `status` = 1 , `id` = 85  WHERE  `id` = 85 [ RunTime:0.000281s ]
+[ sql ] [ SQL ] UPDATE `yzn_auth_rule`  SET `name` = 'admin/config/del' , `title` = '删除配置' , `module` = 'admin' , `type` = 1 , `status` = 1 , `id` = 87  WHERE  `id` = 87 [ RunTime:0.000174s ]
+[ sql ] [ SQL ] UPDATE `yzn_auth_rule`  SET `name` = 'admin/config/edit' , `title` = '编辑配置' , `module` = 'admin' , `type` = 1 , `status` = 1 , `id` = 86  WHERE  `id` = 86 [ RunTime:0.000159s ]
+[ sql ] [ SQL ] UPDATE `yzn_auth_rule`  SET `name` = 'admin/config/index' , `title` = '配置管理' , `module` = 'admin' , `type` = 1 , `status` = 1 , `id` = 4  WHERE  `id` = 4 [ RunTime:0.000158s ]
+[ sql ] [ SQL ] UPDATE `yzn_auth_rule`  SET `name` = 'attachment/attachments/delete' , `title` = '附件删除' , `module` = 'attachment' , `type` = 1 , `status` = 1 , `id` = 20  WHERE  `id` = 20 [ RunTime:0.000156s ]
+[ sql ] [ SQL ] UPDATE `yzn_auth_rule`  SET `name` = 'attachment/attachments/getUrlFile' , `title` = '图片本地化' , `module` = 'attachment' , `type` = 1 , `status` = 1 , `id` = 23  WHERE  `id` = 23 [ RunTime:0.000154s ]
+[ sql ] [ SQL ] UPDATE `yzn_auth_rule`  SET `name` = 'attachment/attachments/index' , `title` = '附件管理' , `module` = 'attachment' , `type` = 1 , `status` = 1 , `id` = 84  WHERE  `id` = 84 [ RunTime:0.000227s ]
+[ sql ] [ SQL ] UPDATE `yzn_auth_rule`  SET `name` = 'attachment/attachments/showFileLis' , `title` = '图片列表' , `module` = 'attachment' , `type` = 1 , `status` = 1 , `id` = 22  WHERE  `id` = 22 [ RunTime:0.000177s ]
+[ sql ] [ SQL ] UPDATE `yzn_auth_rule`  SET `name` = 'attachment/attachments/upload' , `title` = '附件上传' , `module` = 'attachment' , `type` = 1 , `status` = 1 , `id` = 19  WHERE  `id` = 19 [ RunTime:0.000157s ]
+[ sql ] [ SQL ] UPDATE `yzn_auth_rule`  SET `name` = 'attachment/ueditor/run' , `title` = '编辑器附件' , `module` = 'attachment' , `type` = 1 , `status` = 1 , `id` = 21  WHERE  `id` = 21 [ RunTime:0.000157s ]
+[ sql ] [ SQL ] INSERT INTO `yzn_auth_rule` (`name` , `title` , `module` , `type` , `status`) VALUES ( 'attachment/attachments/export','导出全部数据','attachment',1,1 ) [ RunTime:0.000167s ]
+[ sql ] [ SQL ] SELECT `id` FROM `yzn_menu` WHERE  `status` = 0 [ RunTime:0.000172s ]
+[ sql ] [ SQL ] SELECT `id` FROM `yzn_menu` WHERE  `parentid` IN (107,83,100,102) [ RunTime:0.000181s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `id` NOT IN (107,83,100,102,108,84,85,86,87,88,89,90,91,92,93,94,95,96,97) ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000645s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_auth_group` [ RunTime:0.003471s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `yzn_auth_group` WHERE  `status` <> 0  AND `id` = 2  AND `type` = 1 LIMIT 1 [ RunTime:0.000299s ]
+[ sql ] [ SQL ] SELECT `name`,`id` FROM `yzn_auth_rule` WHERE  `status` = 1 [ RunTime:0.000216s ]
+---------------------------------------------------------------
+[2021-03-10T17:01:48+08:00] ::1 GET localhost/yzn/admin/menu/index/menuid/14.html
+[运行时间：0.034434s] [吞吐率：29.04req/s] [内存消耗：4,196.95kb] [文件加载：92]
+[ info ] [ LANG ] E:\UPUPW_AP7.0_64\htdocs\yzn\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'sec-ch-ua' => '"Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"',
+  'sec-ch-ua-mobile' => '?0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'sec-fetch-site' => 'same-origin',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-dest' => 'iframe',
+  'referer' => 'http://localhost/yzn/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=3nnae0m2mvpitdp9uuan9d43v4; think___forward__=%2Fyzn%2Fcms%2Ffield%2Findex%2Fid%2F3.html%3Fpage%3D1%26limit%3D10',
+)
+[ info ] [ PARAM ] array (
+  'menuid' => '14',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\UPUPW_AP7.0_64\htdocs\yzn\application\admin\view\menu\index.html [ array (
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000395s ] mysql:host=127.0.0.1;port=3306;dbname=yzn;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.003323s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000478s ]
+---------------------------------------------------------------
+[2021-03-10T17:01:49+08:00] ::1 GET localhost/yzn/admin/menu/index.html?page=1&limit=10
+[运行时间：0.036993s] [吞吐率：27.03req/s] [内存消耗：3,938.80kb] [文件加载：88]
+[ info ] [ LANG ] E:\UPUPW_AP7.0_64\htdocs\yzn\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'sec-ch-ua' => '"Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'sec-ch-ua-mobile' => '?0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36',
+  'sec-fetch-site' => 'same-origin',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-dest' => 'empty',
+  'referer' => 'http://localhost/yzn/admin/menu/index/menuid/14.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=3nnae0m2mvpitdp9uuan9d43v4; think___forward__=%2Fyzn%2Fcms%2Ffield%2Findex%2Fid%2F3.html%3Fpage%3D1%26limit%3D10',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000397s ] mysql:host=127.0.0.1;port=3306;dbname=yzn;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.005406s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000303s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_menu` [ RunTime:0.002657s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` ORDER BY `listorder`,`id` DESC [ RunTime:0.000880s ]
+---------------------------------------------------------------
+[2021-03-10T17:01:56+08:00] ::1 POST localhost/yzn/admin/menu/setstate.html
+[运行时间：0.040609s] [吞吐率：24.63req/s] [内存消耗：3,896.00kb] [文件加载：89]
+[ info ] [ LANG ] E:\UPUPW_AP7.0_64\htdocs\yzn\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '18',
+  'sec-ch-ua' => '"Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'sec-ch-ua-mobile' => '?0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'http://localhost',
+  'sec-fetch-site' => 'same-origin',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-dest' => 'empty',
+  'referer' => 'http://localhost/yzn/admin/menu/index/menuid/14.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=3nnae0m2mvpitdp9uuan9d43v4; think___forward__=%2Fyzn%2Fcms%2Ffield%2Findex%2Fid%2F3.html%3Fpage%3D1%26limit%3D10',
+)
+[ info ] [ PARAM ] array (
+  'id' => '11',
+  'status' => 'false',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000422s ] mysql:host=127.0.0.1;port=3306;dbname=yzn;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.003342s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000269s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_menu` [ RunTime:0.002811s ]
+[ sql ] [ SQL ] UPDATE `yzn_menu`  SET `status` = 0  WHERE  `id` = 11 [ RunTime:0.000317s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_adminlog` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] INSERT INTO `yzn_adminlog` (`uid` , `status` , `info` , `get` , `ip` , `create_time`) VALUES (1 , 1 , '提示语:操作成功！' , '/yzn/admin/menu/setstate.html' , '0' , 1615366916) [ RunTime:0.000329s ]
+---------------------------------------------------------------
+[2021-03-10T17:02:01+08:00] ::1 POST localhost/yzn/admin/menu/setstate.html
+[运行时间：0.043792s] [吞吐率：22.84req/s] [内存消耗：3,896.00kb] [文件加载：89]
+[ info ] [ LANG ] E:\UPUPW_AP7.0_64\htdocs\yzn\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '18',
+  'sec-ch-ua' => '"Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"',
+  'accept' => '*/*',
+  'x-requested-with' => 'XMLHttpRequest',
+  'sec-ch-ua-mobile' => '?0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'http://localhost',
+  'sec-fetch-site' => 'same-origin',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-dest' => 'empty',
+  'referer' => 'http://localhost/yzn/admin/menu/index/menuid/14.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=3nnae0m2mvpitdp9uuan9d43v4; think___forward__=%2Fyzn%2Fcms%2Ffield%2Findex%2Fid%2F3.html%3Fpage%3D1%26limit%3D10',
+)
+[ info ] [ PARAM ] array (
+  'id' => '23',
+  'status' => 'false',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000402s ] mysql:host=127.0.0.1;port=3306;dbname=yzn;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.003114s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000354s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_menu` [ RunTime:0.003166s ]
+[ sql ] [ SQL ] UPDATE `yzn_menu`  SET `status` = 0  WHERE  `id` = 23 [ RunTime:0.000239s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_adminlog` [ RunTime:0.002684s ]
+[ sql ] [ SQL ] INSERT INTO `yzn_adminlog` (`uid` , `status` , `info` , `get` , `ip` , `create_time`) VALUES (1 , 1 , '提示语:操作成功！' , '/yzn/admin/menu/setstate.html' , '0' , 1615366921) [ RunTime:0.000187s ]
+---------------------------------------------------------------
+[2021-03-10T17:02:02+08:00] ::1 GET localhost/yzn/admin/config/index/menuid/11.html
+[运行时间：0.036330s] [吞吐率：27.53req/s] [内存消耗：4,169.09kb] [文件加载：92]
+[ info ] [ LANG ] E:\UPUPW_AP7.0_64\htdocs\yzn\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'sec-ch-ua' => '"Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"',
+  'sec-ch-ua-mobile' => '?0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'sec-fetch-site' => 'same-origin',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-dest' => 'iframe',
+  'referer' => 'http://localhost/yzn/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=3nnae0m2mvpitdp9uuan9d43v4; think___forward__=%2Fyzn%2Fcms%2Ffield%2Findex%2Fid%2F3.html%3Fpage%3D1%26limit%3D10',
+)
+[ info ] [ PARAM ] array (
+  'menuid' => '11',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\UPUPW_AP7.0_64\htdocs\yzn\application\admin\view\config\index.html [ array (
+  0 => 'groupArray',
+  1 => 'group',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000530s ] mysql:host=127.0.0.1;port=3306;dbname=yzn;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.002869s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000234s ]
+---------------------------------------------------------------
+[2021-03-10T17:02:02+08:00] ::1 GET localhost/yzn/admin/config/index/group/base.html?page=1&limit=10
+[运行时间：0.036444s] [吞吐率：27.44req/s] [内存消耗：3,815.63kb] [文件加载：87]
+[ info ] [ LANG ] E:\UPUPW_AP7.0_64\htdocs\yzn\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'sec-ch-ua' => '"Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'sec-ch-ua-mobile' => '?0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36',
+  'sec-fetch-site' => 'same-origin',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-dest' => 'empty',
+  'referer' => 'http://localhost/yzn/admin/config/index/menuid/11.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=3nnae0m2mvpitdp9uuan9d43v4; think___forward__=%2Fyzn%2Fcms%2Ffield%2Findex%2Fid%2F3.html%3Fpage%3D1%26limit%3D10',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+  'group' => 'base',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000439s ] mysql:host=127.0.0.1;port=3306;dbname=yzn;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.002905s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000241s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_config` [ RunTime:0.002590s ]
+[ sql ] [ SQL ] SELECT `config`.`id`,`config`.`name`,`config`.`title`,`config`.`type`,`config`.`listorder`,`config`.`status`,`config`.`update_time`,field_type.title as ftitle FROM `yzn_config` `config` LEFT JOIN `yzn_field_type` `field_type` ON `field_type`.`name`=`config`.`type` WHERE  `group` = 'base' ORDER BY `config`.`listorder` ASC,`config`.`id` DESC [ RunTime:0.000312s ]
+---------------------------------------------------------------
+[2021-03-10T17:02:03+08:00] ::1 GET localhost/yzn/admin/index/index.html
+[运行时间：0.135225s] [吞吐率：7.40req/s] [内存消耗：4,360.01kb] [文件加载：94]
+[ info ] [ LANG ] E:\UPUPW_AP7.0_64\htdocs\yzn\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'sec-ch-ua' => '"Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"',
+  'sec-ch-ua-mobile' => '?0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'sec-fetch-site' => 'same-origin',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-dest' => 'document',
+  'referer' => 'http://localhost/yzn/admin/index/login.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=3nnae0m2mvpitdp9uuan9d43v4; think___forward__=%2Fyzn%2Fcms%2Ffield%2Findex%2Fid%2F3.html%3Fpage%3D1%26limit%3D10',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\UPUPW_AP7.0_64\htdocs\yzn\application\admin\view\index\index.html [ array (
+  0 => 'userInfo',
+  1 => 'SUBMENU_CONFIG',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000431s ] mysql:host=127.0.0.1;port=3306;dbname=yzn;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.002857s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000230s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_menu` [ RunTime:0.003080s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 0  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000329s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 1  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000380s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 3  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000411s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 10  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.001632s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 13  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000298s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 14  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000278s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 27  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000237s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 28  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 29  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000283s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 15  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000282s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 16  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000563s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 18  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000349s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 19  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000242s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 21  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000328s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 17  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000540s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 22  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000400s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 48  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000299s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 49  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000242s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 50  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000291s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 51  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000329s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 20  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000332s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 12  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000497s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 72  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000449s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 73  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000406s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 56  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000474s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 57  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000512s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 58  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000448s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 59  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000258s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 60  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000242s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 61  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000256s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 62  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000258s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 63  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000440s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 64  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000321s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 65  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000256s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 66  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000236s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 67  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000278s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 68  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000239s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 69  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000249s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 70  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.001143s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 71  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000488s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 74  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000339s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 75  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 76  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000307s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 77  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000238s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 78  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000247s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 79  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000250s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 80  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000228s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 81  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000233s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 82  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000238s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 105  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000247s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 106  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.001987s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 98  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000434s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 99  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000280s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 101  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000347s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 114  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000256s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 115  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000244s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 116  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000241s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 103  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000267s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 104  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000280s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 110  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000284s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 111  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000261s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 112  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000336s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` WHERE  `parentid` = 113  AND `status` = 1  AND `is_top` = 1 ORDER BY `listorder` ASC,`id` ASC [ RunTime:0.000433s ]
+---------------------------------------------------------------
+[2021-03-10T17:02:04+08:00] ::1 GET localhost/yzn/admin/main/index.html
+[运行时间：0.043085s] [吞吐率：23.21req/s] [内存消耗：4,107.27kb] [文件加载：91]
+[ info ] [ LANG ] E:\UPUPW_AP7.0_64\htdocs\yzn\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'sec-ch-ua' => '"Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"',
+  'sec-ch-ua-mobile' => '?0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'sec-fetch-site' => 'same-origin',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-dest' => 'iframe',
+  'referer' => 'http://localhost/yzn/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=3nnae0m2mvpitdp9uuan9d43v4; think___forward__=%2Fyzn%2Fcms%2Ffield%2Findex%2Fid%2F3.html%3Fpage%3D1%26limit%3D10',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\UPUPW_AP7.0_64\htdocs\yzn\application\admin\view\main\index.html [ array (
+  0 => 'userInfo',
+  1 => 'last_login_time',
+  2 => 'sys_info',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000408s ] mysql:host=127.0.0.1;port=3306;dbname=yzn;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.002824s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000283s ]
+[ sql ] [ SQL ] SELECT VERSION() as version [ RunTime:0.000977s ]
+---------------------------------------------------------------
+[2021-03-10T17:02:05+08:00] ::1 GET localhost/yzn/admin/config/setting/menuid/13.html
+[运行时间：0.041643s] [吞吐率：24.01req/s] [内存消耗：4,164.79kb] [文件加载：92]
+[ info ] [ LANG ] E:\UPUPW_AP7.0_64\htdocs\yzn\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'sec-ch-ua' => '"Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"',
+  'sec-ch-ua-mobile' => '?0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'sec-fetch-site' => 'same-origin',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-dest' => 'iframe',
+  'referer' => 'http://localhost/yzn/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=3nnae0m2mvpitdp9uuan9d43v4; think___forward__=%2Fyzn%2Fcms%2Ffield%2Findex%2Fid%2F3.html%3Fpage%3D1%26limit%3D10',
+)
+[ info ] [ PARAM ] array (
+  'menuid' => '13',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\UPUPW_AP7.0_64\htdocs\yzn\application\admin\view\config\setting.html [ array (
+  0 => 'groupArray',
+  1 => 'fieldList',
+  2 => 'group',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000406s ] mysql:host=127.0.0.1;port=3306;dbname=yzn;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.003245s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000483s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_config` [ RunTime:0.003401s ]
+[ sql ] [ SQL ] SELECT `name`,`title`,`remark`,`type`,`value`,`options` FROM `yzn_config` WHERE  `group` = 'base'  AND `status` = 1 ORDER BY `listorder`,`id` DESC [ RunTime:0.000293s ]
+---------------------------------------------------------------
+[2021-03-10T17:02:07+08:00] ::1 GET localhost/yzn/cms/setting/index/menuid/73.html
+[运行时间：0.043040s] [吞吐率：23.23req/s] [内存消耗：4,171.45kb] [文件加载：92]
+[ info ] [ LANG ] E:\UPUPW_AP7.0_64\htdocs\yzn\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'sec-ch-ua' => '"Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"',
+  'sec-ch-ua-mobile' => '?0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'sec-fetch-site' => 'same-origin',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-dest' => 'iframe',
+  'referer' => 'http://localhost/yzn/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=3nnae0m2mvpitdp9uuan9d43v4; think___forward__=%2Fyzn%2Fcms%2Ffield%2Findex%2Fid%2F3.html%3Fpage%3D1%26limit%3D10',
+)
+[ info ] [ PARAM ] array (
+  'menuid' => '73',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\UPUPW_AP7.0_64\htdocs\yzn\application\cms\view\setting\index.html [ array (
+  0 => 'setting',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000413s ] mysql:host=127.0.0.1;port=3306;dbname=yzn;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.002901s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000258s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_module` [ RunTime:0.005397s ]
+[ sql ] [ SQL ] SELECT `setting` FROM `yzn_module` WHERE  `module` = 'cms' LIMIT 1 [ RunTime:0.000242s ]
+---------------------------------------------------------------
+[2021-03-10T17:02:09+08:00] ::1 GET localhost/yzn/admin/menu/index/menuid/14.html
+[运行时间：0.033891s] [吞吐率：29.51req/s] [内存消耗：4,196.88kb] [文件加载：92]
+[ info ] [ LANG ] E:\UPUPW_AP7.0_64\htdocs\yzn\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'sec-ch-ua' => '"Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"',
+  'sec-ch-ua-mobile' => '?0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'sec-fetch-site' => 'same-origin',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-dest' => 'iframe',
+  'referer' => 'http://localhost/yzn/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=3nnae0m2mvpitdp9uuan9d43v4; think___forward__=%2Fyzn%2Fcms%2Ffield%2Findex%2Fid%2F3.html%3Fpage%3D1%26limit%3D10',
+)
+[ info ] [ PARAM ] array (
+  'menuid' => '14',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\UPUPW_AP7.0_64\htdocs\yzn\application\admin\view\menu\index.html [ array (
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000393s ] mysql:host=127.0.0.1;port=3306;dbname=yzn;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.002842s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000235s ]
+---------------------------------------------------------------
+[2021-03-10T17:02:09+08:00] ::1 GET localhost/yzn/admin/menu/index.html?page=1&limit=10
+[运行时间：0.039082s] [吞吐率：25.59req/s] [内存消耗：3,938.80kb] [文件加载：88]
+[ info ] [ LANG ] E:\UPUPW_AP7.0_64\htdocs\yzn\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'sec-ch-ua' => '"Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'sec-ch-ua-mobile' => '?0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36',
+  'sec-fetch-site' => 'same-origin',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-dest' => 'empty',
+  'referer' => 'http://localhost/yzn/admin/menu/index/menuid/14.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=3nnae0m2mvpitdp9uuan9d43v4; think___forward__=%2Fyzn%2Fcms%2Ffield%2Findex%2Fid%2F3.html%3Fpage%3D1%26limit%3D10',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000936s ] mysql:host=127.0.0.1;port=3306;dbname=yzn;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_admin` [ RunTime:0.004589s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000365s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_menu` [ RunTime:0.002866s ]
+[ sql ] [ SQL ] SELECT * FROM `yzn_menu` ORDER BY `listorder`,`id` DESC [ RunTime:0.000718s ]
+---------------------------------------------------------------
+[2021-03-10T17:02:16+08:00] ::1 GET localhost/yzn/
+[运行时间：0.065393s] [吞吐率：15.29req/s] [内存消耗：4,714.29kb] [文件加载：97]
+[ info ] [ LANG ] E:\UPUPW_AP7.0_64\htdocs\yzn\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'sec-ch-ua' => '"Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"',
+  'sec-ch-ua-mobile' => '?0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'sec-fetch-site' => 'same-origin',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-dest' => 'document',
+  'referer' => 'http://localhost/yzn/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=3nnae0m2mvpitdp9uuan9d43v4; think___forward__=%2Fyzn%2Fcms%2Ffield%2Findex%2Fid%2F3.html%3Fpage%3D1%26limit%3D10',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\UPUPW_AP7.0_64\htdocs\yzn\application\index\view\index\index.html [ array (
+  0 => 'list1',
+  1 => 'list2',
+  2 => 'list3',
+  3 => 'list_hot',
+  4 => 'flink',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000546s ] mysql:host=127.0.0.1;port=3306;dbname=yzn;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_article` [ RunTime:0.003774s ]
+[ sql ] [ SQL ] SELECT `article`.*,`attachment`.`path` FROM `yzn_article` `article` LEFT JOIN `yzn_attachment` `attachment` ON `attachment`.`id`=`article`.`image` WHERE  `article`.`status` = '1'  AND `article`.`catid` = '10' ORDER BY `article`.`hits` LIMIT 6 [ RunTime:0.000834s ]
+[ sql ] [ SQL ] SELECT `article`.*,`attachment`.`path` FROM `yzn_article` `article` LEFT JOIN `yzn_attachment` `attachment` ON `attachment`.`id`=`article`.`image` WHERE  `article`.`status` = '1'  AND `article`.`catid` = '9' ORDER BY `article`.`hits` LIMIT 6 [ RunTime:0.000657s ]
+[ sql ] [ SQL ] SELECT `article`.*,`attachment`.`path` FROM `yzn_article` `article` LEFT JOIN `yzn_attachment` `attachment` ON `attachment`.`id`=`article`.`image` WHERE  `article`.`status` = '1'  AND `article`.`catid` = '14' ORDER BY `article`.`hits` LIMIT 6 [ RunTime:0.000357s ]
+[ sql ] [ SQL ] SELECT `article`.*,`attachment`.`path` FROM `yzn_article` `article` LEFT JOIN `yzn_attachment` `attachment` ON `attachment`.`id`=`article`.`image` WHERE  `article`.`status` = '1' ORDER BY `article`.`hits` LIMIT 6 [ RunTime:0.000344s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yzn_flink` [ RunTime:0.004432s ]
+[ sql ] [ SQL ] SELECT `flink`.*,`attachment`.`path` FROM `yzn_flink` `flink` LEFT JOIN `yzn_attachment` `attachment` ON `flink`.`image`=`attachment`.`id` WHERE  `flink`.`status` = '1' ORDER BY `flink`.`list_order`,`addtime` DESC [ RunTime:0.000338s ]
+[ error ] [8]未定义变量: keyword[E:\UPUPW_AP7.0_64\htdocs\yzn\runtime\temp\ebd1d0062d4ca7fcef91fa5b47f10463.php:161]

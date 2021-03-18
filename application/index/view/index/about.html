@@ -1,0 +1,42 @@
+<include file="public/head" />
+<div class="www-main-wrap" >
+	<ul  class="menu-breadcrumb">
+		<li  class="home"></li>
+		<li >
+			<a  href="__ROOT__">首页</a>
+		</li>
+		<li >&gt;</li>
+		<li >
+			<a  href="{:url('index/about')}">关于我们</a>
+		</li>
+		<li >&gt;</li>
+		<li >公司简介</li>
+	</ul>
+	<div class="www-main-container clearfix" style="" >
+		<div class="about-menu f-l" >
+			<ul >
+				<li  class="top-title" ><span >关于我们</span></li>
+				<volist name="list" id="val">
+					<a href="{:url('index/about',array('id'=>$val['id']))}"><li  class="other-title  <if $val.id==$id>active</if>"><span >{$val['catname']}</span></li></a>
+				</volist>
+				
+			</ul>
+		</div>
+		<div  class="about-us f-l">
+			<div class="a_rcon">
+				<div class="a_rcontext">
+					<div class="a_rcontext1">
+						<div class="a_rcontext2 clearfix">
+							<span class="a_rcont2">{$about['title']}</span>
+						</div>
+
+						<div class="a_rcontc">
+							{:showhtml($about['content'])}
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<include file="public/foot" />

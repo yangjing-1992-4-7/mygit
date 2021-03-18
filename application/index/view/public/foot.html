@@ -1,0 +1,115 @@
+<div class="index-footer">
+							<div class="index-footer-inner">
+								<div class="footer-l1 clearfix">
+									<div class="footer-l1-inner clearfix">
+										<div class="footer-sitemap">
+											<div class="footer-sitemap-split">
+												<p class="sitemap-title">关于我们</p>
+												<volist name="_list" id="val">
+													<a href="{:url('index/about',array('id'=>$val['id']))}" target="_blank">
+														<p class="sitemap-item">{$val['catname']}</p>
+													</a>
+												</volist>
+											</div>
+											<div class="footer-sitemap-split">
+												<p class="sitemap-title">安全保障</p>
+												<a href="javascript:void(0)" >
+													<p class="sitemap-item">法律法规</p>
+												</a>
+												<a href="javascript:void(0)" >
+													<p class="sitemap-item">安全保障</p>
+												</a>
+												<a href="javascript:void(0)" >
+													<p class="sitemap-item">反舞弊专线</p>
+												</a>
+												<a href="__IMG__/privacy_policy.pdf" target="_blank">
+													<p class="sitemap-item">用户隐私政策</p>
+												</a>
+												<a href="{:url('index/pc_term')}" target="_blank">
+													<p class="sitemap-item">用户服务协议</p>
+												</a>
+											</div>
+										</div>
+										<div class="footer-qrcode">
+											<div class="footer-qrcode-title">关注我们</div>
+											<div class="footer-qrcode-split" style="margin-right:28px;"><img src="__IMG__/qrcode3.png">
+												<p>{:config('site_title')}</p>
+											</div>
+											<div class="footer-qrcode-split"><img src="__IMG__/qrcode4.png">
+												<p>{:config('site_title')}</p>
+											</div>
+										</div>
+										<div class="footer-contact">
+											<p class="contact-title">联系我们</p>
+											<p class="service-call">{:config('telphone_number')}</p>
+											<p class="service-time">服务时间: 08:00-24:00</p>
+											<p class="complain-wrap">
+												投诉热线
+												<span class="complain-line">{:config('telphone_number')}（8:00-24:00）</span></p>
+											<p class="contact-contents">
+												<a href="javascript:void(0)" >
+													<span class="contact-contents-item">
+														<i class="contact-item-img service-icon"></i>
+														在线客服
+              										</span>
+												</a>
+												<a href="javascript:void(0)" >
+													<span class="contact-contents-item">
+														<i class="contact-item-img weibo-icon"></i>
+														新浪微博
+              										</span>
+												</a>
+											</p>
+										</div>
+									</div>
+									<div class="footer-l2-pre">
+										金融服务将根据您的个人情况由适合的正规金融机构提供；综合年化利率（除本金以外所有还款/期初借款本金）以最终审批结果为准；
+										<br>平台承诺不额外向用户收取费用；借款实际到账时间（提交借款申请到资金到账时间）视机构放款速度而定；请根据个人能力合理贷款，理性消费，避免逾期
+									</div>
+								</div>
+								<div class="footer-l2 clearfix">
+									<div class="footer-l2-inner clearfix">
+										<div>
+											<div class="footer-l2-imgs">
+												<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011502000216" target="_blank">
+													<i class="footer-l2-icon icon-1"></i>
+												</a>
+												<a href="http://www.shjbzx.cn/" target="_blank">
+													<i class="footer-l2-icon icon-4"></i>
+												</a>
+											</div>
+											<p class="footer-l2-rights">
+												Copyright Reserved 2007-2021©{:config('site_title')} |
+												<a href="https://beian.miit.gov.cn/" target="_blank">{:config('web_site_icp')}</a>
+												 | 网站支持IPv6
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="right-side-box" >
+							<div class="box-item-div call-phone-div" >
+								<div class="item-icon call-phone" ></div>
+								<div class="item-popup call-phone-popup" ></div>
+							</div>
+							<div class="box-item-div qr-code-div" >
+								<div class="item-icon qr-code"></div>
+								<div class="item-popup app-down" ></div>
+							</div>
+							<div class="box-item-div call-service-div" >
+								<a href="javascirpt:void(0)"  class="">
+									<div class="item-icon call-service" ></div>
+								</a>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+		
+	</body>
+
+</html>

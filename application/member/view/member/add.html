@@ -1,0 +1,84 @@
+{extend name="admin@index_layout"/}
+{block name="main"}
+<div class="layui-card">
+    <div class="layui-card-header">添加会员</div>
+    <div class="layui-card-body">
+        <form class="layui-form form-horizontal" action="" method="post">
+            <div class="layui-form-item">
+                <label class="layui-form-label">用户名</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="username" autocomplete="off" placeholder="用户名" class="layui-input">
+                </div>
+                <div class="layui-form-mid layui-word-aux">6-20位字符，可由字母和数字，下划线"_"及破折号"-"组成。</div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">昵称</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="nickname" autocomplete="off" placeholder="昵称" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">手机号</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="mobile" autocomplete="off" placeholder="手机号" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">邮箱</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="email" autocomplete="off" placeholder="邮箱" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">密码</label>
+                <div class="layui-input-inline">
+                    <input type="password" name="password" autocomplete="off" placeholder="密码" class="layui-input">
+                </div>
+                <div class="layui-form-mid layui-word-aux">6-20位字符，可由字母和数字，下划线"_"及破折号"-"组成。</div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">确认密码</label>
+                <div class="layui-input-inline">
+                    <input type="password" name="password_confirm" autocomplete="off" placeholder="确认密码" class="layui-input">
+                </div>
+                <div class="layui-form-mid layui-word-aux">请再次输入您的密码</div>
+            </div>
+            <div class="layui-form-item web_list">
+                <label class="layui-form-label">会员组</label>
+                    <div class="layui-input-inline">
+                        {php} echo \util\Form::select($groupCache, input('groupid',0), 'name="groupid"', '') {/php}
+                    </div>
+            </div>
+            <div class="layui-form-item layui-form-text">
+                <label class="layui-form-label">会员头像</label>
+                <div class="layui-form-field-label">
+                    <div class="js-upload-image">
+                        {php}echo \util\Form::images('avatar'){/php}
+                    </div>
+                </div>
+            </div>
+            <style>
+            	#picker_avatar{
+            		padding-left: 110px;
+            	}
+            </style>
+            <!--<div class="layui-form-item">
+                <label class="layui-form-label">积分点数</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="point" autocomplete="off" placeholder="积分点数" class="layui-input" value="0">
+                </div>
+                <div class="layui-form-mid layui-word-aux"> 请输入积分点数，积分点数将影响会员用户组</div>
+            </div>-->
+            <div class="layui-form-item">
+                <div class="layui-input-block">
+                    <input type="button" value="立即提交" class="layui-btn ajax-post" lay-submit lay-filter="*" target-form="form-horizontal" />
+                    <input type="button" value="返回" class="layui-btn layui-btn-normal" onclick="javascript :history.back(-1);"/>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+{/block}
+{block name="script"}
+<script type="text/javascript" src="__STATIC__/admin/js/common.js"></script>
+{/block}

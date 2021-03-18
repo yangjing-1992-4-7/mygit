@@ -1,0 +1,85 @@
+<include file="public/head"/>
+		<div class="container">
+			<!--左侧图片-->
+			<div class="container_box" >
+				<div class="layout">
+					<div class="layout_left"></div>
+					<!--右侧输入框-->
+					<div class="layout_right">
+						<div class="layout_right_content">
+							<div class="login-title">
+								<p>账户登录</p>
+							</div>
+							<div class="input_group">
+								<!--我要理财-->
+								<form class="js-ajax-form" action="" id="login" method="post">
+									<!--带图标的输入框-->
+									<div class="input_item">
+										<img src="__IMG__/zctb_06.png" alt="手机号码">
+										<div class="input_content"> 
+											<input type="text" name="phone" id='phone' placeholder="请输入您的手机号" autocomplete="new-password"> 
+										</div>
+									</div>
+
+									<div class="input_item"> 
+										<img src="__IMG__/zctb_18.png" alt="密码">
+										<div class="input_content">
+											<input type="text" name="user_passwd" placeholder="请输入你的登录密码" autocomplete="new-password" onclick="this.type='password'">
+										</div>
+									</div>
+
+									<div class="input_with_other">
+				
+										<div class="input_item input_item_verify" > 
+											<img src="__IMG__/zctb_18.png" alt="图文验证码">
+											<div class="input_content input_content_verify"> 
+												<input type="text" class="verify"  name="verify" placeholder="图文验证码"> 
+											</div>
+										</div>
+					
+										<div class="input_other code"> 
+											<img class="verify_img" src="{:url('api/checkcode/getVerify','font_size=18&imageW=190&imageH=45')}"  style="cursor: pointer;" title="点击获取验证码" />
+										</div>
+									</div>	
+									<div class="rmb-psd"> 
+										<input type="checkbox" id="rmbUser">
+										<label>记住手机号</label>
+										<a href="{:url('index/forgot_password')}">忘记密码？</a>
+									</div>
+									<div class="submit_layout btn_reg_layout"> 
+										<input class="btn_submit" style="border-radius:4px;" value="立即登录"></input> 
+									</div>
+									<!--右侧输入框结束-->
+									<div class="login">
+										<div class="login_href"> <span>没有账号?</span>
+											<a href="{:url('index/reg')}">点击注册</a>
+										</div>
+									</div>
+									<!--底部协议结束-->
+								</form>
+								<!--我要理财结束-->
+							
+			
+					</div>
+				</div>
+				<!--正文结束-->
+			</div>
+		</div>
+	
+
+					</div>
+					
+				</div>
+				
+<include file="public/foot"/>
+
+<script>
+	$(document).ready(function(){
+		//刷新验证码
+	    $(".verify_img").click(function() {
+	        var verifyimg = $(this).attr("src");
+	        $(this).attr("src", verifyimg.replace(/\?.*$/, '') + '?' + Math.random());
+	    });
+	})
+	
+</script>

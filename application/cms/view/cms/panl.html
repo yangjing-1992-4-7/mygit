@@ -1,0 +1,94 @@
+{extend name="admin@index_layout"/}
+{block name="main"}
+<style type="text/css">
+.childrenBody {
+    background: #fff;
+}
+</style>
+
+<div class="layui-row layui-col-space10 panel_box">
+    <div class="panel layui-col-xs12 layui-col-sm6 layui-col-md4 layui-col-lg3">
+        <a href="javascript:;">
+        <div class="panel_icon layui-bg-black">
+            <i class="icon iconfont icon-other layui-anim"></i>
+        </div>
+        <div class="panel_word">
+            <span>{$info.category}</span>
+            <cite>栏目数量</cite>
+        </div>
+    </a>
+    </div>
+    <div class="panel layui-col-xs12 layui-col-sm6 layui-col-md4 layui-col-lg3">
+        <a href="javascript:;">
+        <div class="panel_icon layui-bg-red">
+            <i class="icon iconfont icon-apartment layui-anim"></i>
+        </div>
+        <div class="panel_word">
+            <span>{$info.model}</span>
+            <cite>模型数量</cite>
+        </div>
+    </a>
+    </div>
+    <div class="panel layui-col-xs12 layui-col-sm6 layui-col-md4 layui-col-lg3">
+        <a href="javascript:;">
+        <div class="panel_icon layui-bg-green">
+            <i class="icon iconfont icon-shiyongwendang layui-anim"></i>
+        </div>
+        <div class="panel_word">
+            <span>{$info.doc}</span>
+            <cite>文档数量</cite>
+        </div>
+    </a>
+    </div>
+    <div class="panel layui-col-xs12 layui-col-sm6 layui-col-md4 layui-col-lg3">
+        <a href="javascript:;">
+        <div class="panel_icon layui-bg-blue">
+            <i class="icon iconfont icon-label layui-anim"></i>
+        </div>
+        <div class="panel_word">
+            <span>{$info.tags}</span>
+            <cite>Tags数量</cite>
+        </div>
+    </a>
+    </div>
+</div>
+<blockquote class="layui-elem-quote">
+	导出全部文章信息
+	<a class="layui-btn layui-btn-sm layui-btn-normal export"  style="margin-left: 50px;">导出全部文章</a> 	
+</blockquote>
+
+{/block}
+{block name="script"}
+<script type="text/javascript">
+layui.use(['jquery','table'], function() {
+    var $ = layui.jquery;
+    var table = layui.table;
+    //icon动画
+    $(".panel a").hover(function() {
+        $(this).find(".layui-anim").addClass("layui-anim-scaleSpring");
+    }, function() {
+        $(this).find(".layui-anim").removeClass("layui-anim-scaleSpring");
+    })
+    $(".panel a").click(function() {
+        parent.addTab($(this));
+    })
+    
+    $(".export").on("click",function(){
+    	$.ajax({
+    	  	type:"post",
+    	  	url:'{:url("cms/cms/export")}',
+    	  	async:true,
+    	  	dataType:'json',
+    	  	success:function(data){
+    	  		if (data.code == 1) {
+                    table.exportFile(['ID','标题','文章封面','文章详情','点击量','更新时间','添加时间','关键词','摘要','Tags标签'],data.data, 'xls');
+                } else {
+                    layer.msg(data.msg);
+                }
+    	  		
+    	  	}
+	    });
+    })
+})
+</script>
+{/block}

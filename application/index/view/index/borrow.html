@@ -1,0 +1,391 @@
+<include file="public/head"/>
+<style>
+	.container{
+		height: auto;
+	}
+</style>
+		<div class="container">
+			<a href="javascript:void(0);" class="cursorDefa">
+				<div class="banner licai"></div>
+			</a>
+			<!--理财专区-->
+			<div class="financing-block layout">
+				<div class="financing-search">
+					<div class="order-list">
+						<div class="order-item">
+							<p><span>标的类型：</span></p>
+							<ul class="order-list" id="bd-type">
+								<li id="type_all" class="all active">全部</li>
+								<li id="type_99">新手专享</li>
+								<li id="type_6">企业经营贷</li>
+								<li id="type_3">建材供应贷</li>
+								<li id="type_7">小微企业贷</li>
+								<li id="type_4">项目承包贷</li>
+								<li id="type_5">精英担保贷</li>
+							</ul>
+						</div>
+						<div class="order-item">
+							<p><span>借款期限：</span></p>
+							<ul class="order-list" id="time">
+								<li id="term_all" class="all active">全部</li>
+								<li id="term_10-30">30天</li>
+								<li id="term_10-60">60天</li>
+								<li id="term_10-90">90天</li>
+								<!--<li id="term_1-3">1~3个月</li>-->
+								<!--<li id="term_month">月标</li>-->
+							</ul>
+						</div>
+						<div class="order-item">
+							<p><span>年化利率：</span></p>
+							<ul class="order-list" id="rate">
+								<li id="rate_all" class="all active">全部</li>
+								<!--<li id="rate_10-15">10%~15%</li> <li id="rate_15-1000">15%以上</li>-->
+								<li id="rate_10down">10%以下</li>
+								<li id="rate_10-13">10%~13%</li>
+								<li id="rate_13up">13%以上</li>
+								<li id="rate_plus">加息</li>
+							</ul>
+						</div>
+						<div class="order-item" style="display:none;">
+							<p><span>还款方式：</span></p>
+							<ul class="order-list" id="type">
+								<li id="repmet_all" class="all active">全部</li>
+								<!--<li id="repmet_1">按月付息 到期还本</li>-->
+								<li id="repmet_2">一次性还本付息</li>
+								<!--<li id="repmet_3">等额本金</li>-->
+								<!--<li id="repmet_4">等额本息</li>-->
+							</ul>
+						</div>
+						<div class="order-item">
+							<p><span>标的状态：</span></p>
+							<ul class="order-list" id="state">
+								<li id="state_all" class="all active">全部</li>
+								<li id="state_1">可投</li>
+								<li id="state_2">复审中</li>
+								<li id="state_3">已满标</li>
+							</ul>
+						</div>
+					</div>
+					
+				</div>
+				<!--标的搜索结束-->
+				<div class="searchClick">
+					<ul id="sorts" class="sorts">
+						<li id="sorts_all1">
+							<p>默认排序</p>
+						</li>
+						<li id="sorts_term" class="upDowns" data="1">
+							<p>项目期限</p><i class="sortsup"></i><i class="sortsdown"></i></li>
+						<li id="sorts_rate" class="upDowns" data="1">
+							<p>年化利率</p><i class="sortsup"></i><i class="sortsdown"></i></li>
+					</ul>
+				
+				</div>
+				<!--理财列表-->
+				<ul class="financing-block-list " id="output">
+					<li class="financing-block-item ">
+						<div class="left">
+							<div class="name">
+								<h1> <a href="{:url('index/detail')}">建材供应贷-GYD201807190029</a></h1>
+								<div class="fl"> <span title="核心企业担保" class="dan circle-desc"></span> <span title="借款公司为核心企业的上游供应企业" class="circle-desc newGong"></span> <span class="new_tag">单笔出借1万送8.88，单笔出借2万送18.88</span> </div>
+							</div>
+							<div class="desc">
+								<div class="data-item new-data-item">
+									<p class="new-datap1"> 13<span class="padd">.00%</span>+1<span class="padd">.00%</span> </p>
+									<p class="new-datap2 bottom-title">预期年化收益</p>
+								</div>
+								<div class="data-item pos-adj new-pos-adj">
+									<p class="sub-title">90天</p>
+									<p class="bottom-title">出借期限</p>
+								</div>
+								<div class="data-item pos-adj">
+									<p class="sub-title">60000.00</p>
+									<p class="bottom-title">借款金额</p>
+								</div>
+								<div class="data-item new-data-item2">
+									<div class="progress-layout" data-value="100">
+										<div class="progress">
+											<div class="progress-color"></div>
+										</div> <span class="item-span-last">筹款进度:<span class="percentage">0%</span></span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--进度条百分比-->
+						<div class="right new-bg">
+							<a href="{:url('index/detail')}" class="btn btn-buying btn-abs borrow_75879">已满标</a>
+							<p class="p-balance"> 可投金额：0元</p>
+						</div>
+						<!--进度条百分比-->
+					</li>
+					<li class="financing-block-item ">
+						<div class="left">
+							<div class="name">
+								<h1> <a href="{:url('index/detail')}">建材供应贷-GYD201807190028</a></h1>
+								<div class="fl"> <span title="核心企业担保" class="dan circle-desc"></span> <span title="借款公司为核心企业的上游供应企业" class="circle-desc newGong"></span> <span class="new_tag">单笔出借1万送8.88，单笔出借2万送18.88</span> </div>
+							</div>
+							<div class="desc">
+								<div class="data-item new-data-item">
+									<p class="new-datap1"> 13<span class="padd">.00%</span>+1<span class="padd">.00%</span> </p>
+									<p class="new-datap2 bottom-title">预期年化收益</p>
+								</div>
+								<div class="data-item pos-adj new-pos-adj">
+									<p class="sub-title">90天</p>
+									<p class="bottom-title">出借期限</p>
+								</div>
+								<div class="data-item pos-adj">
+									<p class="sub-title">60000.00</p>
+									<p class="bottom-title">借款金额</p>
+								</div>
+								<div class="data-item new-data-item2">
+									<div class="progress-layout" data-value="100">
+										<div class="progress">
+											<div class="progress-color"></div>
+										</div> <span class="item-span-last">筹款进度:<span class="percentage">0%</span></span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--进度条百分比-->
+						<div class="right new-bg">
+							<a href="{:url('index/detail')}" class="btn btn-buying btn-abs borrow_75878">已满标</a>
+							<p class="p-balance"> 可投金额：0元</p>
+						</div>
+						<!--进度条百分比-->
+					</li>
+					<li class="financing-block-item ">
+						<div class="left">
+							<div class="name">
+								<h1> <a href="{:url('index/detail')}">建材供应贷-GYD201807130164</a></h1>
+								<div class="fl"> <span title="核心企业担保" class="dan circle-desc"></span> <span title="借款公司为核心企业的上游供应企业" class="circle-desc newGong"></span> <span class="new_tag">单笔出借1万送8.88，单笔出借2万送18.88</span> </div>
+							</div>
+							<div class="desc">
+								<div class="data-item new-data-item">
+									<p class="new-datap1"> 13<span class="padd">.00%</span>+1<span class="padd">.00%</span> </p>
+									<p class="new-datap2 bottom-title">预期年化收益</p>
+								</div>
+								<div class="data-item pos-adj new-pos-adj">
+									<p class="sub-title">90天</p>
+									<p class="bottom-title">出借期限</p>
+								</div>
+								<div class="data-item pos-adj">
+									<p class="sub-title">100000.00</p>
+									<p class="bottom-title">借款金额</p>
+								</div>
+								<div class="data-item new-data-item2">
+									<div class="progress-layout" data-value="100">
+										<div class="progress">
+											<div class="progress-color"></div>
+										</div> <span class="item-span-last">筹款进度:<span class="percentage">0%</span></span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--进度条百分比-->
+						<div class="right new-bg">
+							<a href="{:url('index/detail')}" class="btn btn-buying btn-abs borrow_74836">已满标</a>
+							<p class="p-balance"> 可投金额：0元</p>
+						</div>
+						<!--进度条百分比-->
+					</li>
+					<li class="financing-block-item ">
+						<div class="left">
+							<div class="name">
+								<h1> <a href="{:url('index/detail')}">建材供应贷-GYD201807130024</a></h1>
+								<div class="fl"> <span title="核心企业担保" class="dan circle-desc"></span> <span title="借款公司为核心企业的上游供应企业" class="circle-desc newGong"></span> <span class="new_tag">单笔出借1万送8.88，单笔出借2万送18.88</span> </div>
+							</div>
+							<div class="desc">
+								<div class="data-item new-data-item">
+									<p class="new-datap1"> 13<span class="padd">.00%</span>+1<span class="padd">.00%</span> </p>
+									<p class="new-datap2 bottom-title">预期年化收益</p>
+								</div>
+								<div class="data-item pos-adj new-pos-adj">
+									<p class="sub-title">90天</p>
+									<p class="bottom-title">出借期限</p>
+								</div>
+								<div class="data-item pos-adj">
+									<p class="sub-title">100000.00</p>
+									<p class="bottom-title">借款金额</p>
+								</div>
+								<div class="data-item new-data-item2">
+									<div class="progress-layout" data-value="100">
+										<div class="progress">
+											<div class="progress-color"></div>
+										</div> <span class="item-span-last">筹款进度:<span class="percentage">0%</span></span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--进度条百分比-->
+						<div class="right new-bg">
+							<a href="{:url('index/detail')}" class="btn btn-buying btn-abs borrow_74687">已满标</a>
+							<p class="p-balance"> 可投金额：0元</p>
+						</div>
+						<!--进度条百分比-->
+					</li>
+					<li class="financing-block-item ">
+						<div class="left">
+							<div class="name">
+								<h1> <a href="{:url('index/detail')}">建材供应贷-GYD201807110109</a></h1>
+								<div class="fl"> <span title="核心企业担保" class="dan circle-desc"></span> <span title="借款公司为核心企业的上游供应企业" class="circle-desc newGong"></span> <span class="new_tag">单笔出借1万送8.88，单笔出借2万送18.88</span> </div>
+							</div>
+							<div class="desc">
+								<div class="data-item new-data-item">
+									<p class="new-datap1"> 13<span class="padd">.00%</span>+1<span class="padd">.00%</span> </p>
+									<p class="new-datap2 bottom-title">预期年化收益</p>
+								</div>
+								<div class="data-item pos-adj new-pos-adj">
+									<p class="sub-title">90天</p>
+									<p class="bottom-title">出借期限</p>
+								</div>
+								<div class="data-item pos-adj">
+									<p class="sub-title">100000.00</p>
+									<p class="bottom-title">借款金额</p>
+								</div>
+								<div class="data-item new-data-item2">
+									<div class="progress-layout" data-value="100">
+										<div class="progress">
+											<div class="progress-color"></div>
+										</div> <span class="item-span-last">筹款进度:<span class="percentage">0%</span></span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--进度条百分比-->
+						<div class="right new-bg">
+							<a href="{:url('index/detail')}" class="btn btn-buying btn-abs borrow_74240">已满标</a>
+							<p class="p-balance"> 可投金额：0元</p>
+						</div>
+						<!--进度条百分比-->
+					</li>
+					<li class="financing-block-item ">
+						<div class="left">
+							<div class="name">
+								<h1> <a href="{:url('index/detail')}">企业经营贷-JGD201807110017</a></h1>
+								<div class="fl"> <span title="自然人股东担保" class="dan circle-desc"></span> <span title="借款企业为应收账款多、资金流健康、经营情况较好的施工企业" class="circle-desc ying"></span> <span class="new_tag">单笔出借1万送8.88，单笔出借2万送18.88</span> </div>
+							</div>
+							<div class="desc">
+								<div class="data-item new-data-item">
+									<p class="new-datap1"> 13<span class="padd">.00%</span>+1<span class="padd">.00%</span> </p>
+									<p class="new-datap2 bottom-title">预期年化收益</p>
+								</div>
+								<div class="data-item pos-adj new-pos-adj">
+									<p class="sub-title">90天</p>
+									<p class="bottom-title">出借期限</p>
+								</div>
+								<div class="data-item pos-adj">
+									<p class="sub-title">80000.00</p>
+									<p class="bottom-title">借款金额</p>
+								</div>
+								<div class="data-item new-data-item2">
+									<div class="progress-layout" data-value="100">
+										<div class="progress">
+											<div class="progress-color"></div>
+										</div> <span class="item-span-last">筹款进度:<span class="percentage">0%</span></span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--进度条百分比-->
+						<div class="right new-bg">
+							<a href="{:url('index/detail')}" class="btn btn-buying btn-abs borrow_74041">已满标</a>
+							<p class="p-balance"> 可投金额：0元</p>
+						</div>
+						<!--进度条百分比-->
+					</li>
+					<li class="financing-block-item ">
+						<div class="left">
+							<div class="name">
+								<h1> <a href="{:url('index/detail')}">建材供应贷-GYD201807110149</a></h1>
+								<div class="fl"> <span title="核心企业担保" class="dan circle-desc"></span> <span title="借款公司为核心企业的上游供应企业" class="circle-desc newGong"></span> <span class="new_tag">单笔出借1万送8.88，单笔出借2万送18.88</span> </div>
+							</div>
+							<div class="desc">
+								<div class="data-item new-data-item">
+									<p class="new-datap1"> 13<span class="padd">.00%</span>+1<span class="padd">.00%</span> </p>
+									<p class="new-datap2 bottom-title">预期年化收益</p>
+								</div>
+								<div class="data-item pos-adj new-pos-adj">
+									<p class="sub-title">90天</p>
+									<p class="bottom-title">出借期限</p>
+								</div>
+								<div class="data-item pos-adj">
+									<p class="sub-title">100000.00</p>
+									<p class="bottom-title">借款金额</p>
+								</div>
+								<div class="data-item new-data-item2">
+									<div class="progress-layout" data-value="100">
+										<div class="progress">
+											<div class="progress-color"></div>
+										</div> <span class="item-span-last">筹款进度:<span class="percentage">0%</span></span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--进度条百分比-->
+						<div class="right new-bg">
+							<a href="{:url('index/detail')}" class="btn btn-buying btn-abs borrow_74280">已满标</a>
+							<p class="p-balance"> 可投金额：0元</p>
+						</div>
+						<!--进度条百分比-->
+					</li>
+					<li class="financing-block-item ">
+						<div class="left">
+							<div class="name">
+								<h1> <a href="{:url('index/detail')}">建材供应贷-GYD201807100099</a></h1>
+								<div class="fl"> <span title="核心企业担保" class="dan circle-desc"></span> <span title="借款公司为核心企业的上游供应企业" class="circle-desc newGong"></span> <span class="new_tag">单笔出借1万送8.88，单笔出借2万送18.88</span> </div>
+							</div>
+							<div class="desc">
+								<div class="data-item new-data-item">
+									<p class="new-datap1"> 13<span class="padd">.00%</span>+1<span class="padd">.00%</span> </p>
+									<p class="new-datap2 bottom-title">预期年化收益</p>
+								</div>
+								<div class="data-item pos-adj new-pos-adj">
+									<p class="sub-title">90天</p>
+									<p class="bottom-title">出借期限</p>
+								</div>
+								<div class="data-item pos-adj">
+									<p class="sub-title">100000.00</p>
+									<p class="bottom-title">借款金额</p>
+								</div>
+								<div class="data-item new-data-item2">
+									<div class="progress-layout" data-value="100">
+										<div class="progress">
+											<div class="progress-color"></div>
+										</div> <span class="item-span-last">筹款进度:<span class="percentage">0%</span></span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--进度条百分比-->
+						<div class="right new-bg">
+							<a href="{:url('index/detail')}" class="btn btn-buying btn-abs borrow_73691">已满标</a>
+							<p class="p-balance"> 可投金额：0元</p>
+						</div>
+						<!--进度条百分比-->
+					</li>
+					
+				</ul>
+				<!--理财列表结束-->
+				<div class="tip">
+					<p>注：市场有风险 出借需谨慎</p>
+				</div>
+				<!--分页列表-->
+				<div class="pages">
+					<div class="page-layout">
+						<div class="page-list">
+							<a class="page-item active">1</a>
+							<a class="page-item" href="/loan/index/lists/p/2"> 2</a>
+							<a class="page-item">...</a>
+							<a class="page-item" href="/loan/index/lists/p/959"> 959 </a>
+							<a class="page-item" href="/loan/index/lists/p/960"> 960 </a>
+							<a class="page-item btn" href="/loan/index/lists/p/2">下一页</a>
+							<a class="page-item btn" href="/loan/index/lists/p/960">尾页</a> <input type="text" size="3" title="请输入要跳转到的页数并回车" onkeydown="javascript:if(event.charCode==13||event.keyCode==13){if(!isNaN(this.value)){ document.location.href='/loan/index/lists/p/'+this.value+'';}return false;}" />
+							<a class="jump-do" href="javascript:;" onclick="PageJump('/loan/index/lists/p/*')">跳转</a>
+						</div>
+					</div>
+				</div>
+				<!--分页列表结束-->
+			</div>
+			<!--理财专区结束-->
+		</div>
+<include file="public/foot"/>		

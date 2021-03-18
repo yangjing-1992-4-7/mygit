@@ -1,0 +1,190 @@
+
+<if ($Request.action!='news_info_wap')>
+<div class="wap_zx">
+	<p class="wap_zx_title">
+		<span class="flink_span1">一&nbsp;最新资讯&nbsp;一</span><br>
+		<span class="flink_span2">行业最新资讯信息</span>
+	</p>
+	
+	<div class="tabs__header">
+		<div class="native">专利申请</div>
+		<div>高企认定</div>
+		<div>版权登记</div>
+		<div>商标注册</div>
+	</div>
+	
+	<div>
+		<ul class="news_wrap">
+		   <volist name="list2" id="val">
+		   	<if ($key==0) >		   		
+				<li class="advisory_content_wrap">
+					<div class="wrap_item_img">
+						<a href="{:url('index/index_wap/news_info_wap',array('id'=>$val['id']))}" title="{$val['title']}"><img src="/public/uploads/{$val['path']}" alt="{$val['title']}"/></a>
+					</div>
+					<div class="wrap_item_title">
+						<a href="{:url('index/index_wap/news_info_wap',array('id'=>$val['id']))}" title="{$val['title']}"><p class="item_detail_title">{$val['title']}</p></a>
+						<a href="{:url('index/index_wap/news_info_wap',array('id'=>$val['id']))}" title="{$val['title']}"><p class="item_detail_info">{$val['description']}</p></a>
+					</div>
+				</li>					
+		   	<else/>				   	
+				<li class="news_wrap_item1">
+					<a href="{:url('index/index_wap/news_info_wap',array('id'=>$val['id']))}" title="{$val['title']}"><p class="item_detail_title1">{$val['title']}</p></a>
+					<p class="item_detail_time">{$val['updatetime']|date="Y-m-d"}</p>
+				</li>					
+		   	</if>
+			</volist>	
+		</ul>
+		
+		<ul class="news_wrap hide">
+		   <volist name="list1" id="val">
+		   	<if ($key==0) >		   		
+				<li class="advisory_content_wrap">
+					<div class="wrap_item_img">
+						<a href="{:url('index/index_wap/news_info_wap',array('id'=>$val['id']))}" title="{$val['title']}"><img src="/public/uploads/{$val['path']}" alt="{$val['title']}"/></a>
+					</div>
+					<div class="wrap_item_title">
+						<a href="{:url('index/index_wap/news_info_wap',array('id'=>$val['id']))}" title="{$val['title']}"><p class="item_detail_title">{$val['title']}</p></a>
+						<a href="{:url('index/index_wap/news_info_wap',array('id'=>$val['id']))}" title="{$val['title']}"><p class="item_detail_info">{$val['description']}</p></a>
+					</div>
+				</li>					
+		   	<else/>				   	
+				<li class="news_wrap_item1">
+					<a href="{:url('index/index_wap/news_info_wap',array('id'=>$val['id']))}" title="{$val['title']}"><p class="item_detail_title1">{$val['title']}</p></a>
+					<p class="item_detail_time">{$val['updatetime']|date="Y-m-d"}</p>
+				</li>					
+		   	</if>
+			</volist>	
+		</ul>
+		
+		<ul class="news_wrap hide">
+		   <volist name="list4" id="val">
+		   	<if ($key==0) >		   		
+				<li class="advisory_content_wrap">
+					<div class="wrap_item_img">
+						<a href="{:url('index/index_wap/news_info_wap',array('id'=>$val['id']))}" title="{$val['title']}"><img src="/public/uploads/{$val['path']}" alt="{$val['title']}"/></a>
+					</div>
+					<div class="wrap_item_title">
+						<a href="{:url('index/index_wap/news_info_wap',array('id'=>$val['id']))}" title="{$val['title']}"><p class="item_detail_title">{$val['title']}</p></a>
+						<a href="{:url('index/index_wap/news_info_wap',array('id'=>$val['id']))}" title="{$val['title']}"><p class="item_detail_info">{$val['description']}</p></a>
+					</div>
+				</li>					
+		   	<else/>				   	
+				<li class="news_wrap_item1">
+					<a href="{:url('index/index_wap/news_info_wap',array('id'=>$val['id']))}" title="{$val['title']}"><p class="item_detail_title1">{$val['title']}</p></a>
+					<p class="item_detail_time">{$val['updatetime']|date="Y-m-d"}</p>
+				</li>					
+		   	</if>
+			</volist>	
+		</ul>
+		
+		<ul class="news_wrap hide">
+		   <volist name="list3" id="val">
+		   	<if ($key==0) >		   		
+				<li class="advisory_content_wrap">
+					<div class="wrap_item_img">
+						<a href="{:url('index/index_wap/news_info_wap',array('id'=>$val['id']))}" title="{$val['title']}"><img src="/public/uploads/{$val['path']}" alt="{$val['title']}"/></a>
+					</div>
+					<div class="wrap_item_title">
+						<a href="{:url('index/index_wap/news_info_wap',array('id'=>$val['id']))}" title="{$val['title']}"><p class="item_detail_title">{$val['title']}</p></a>
+						<a href="{:url('index/index_wap/news_info_wap',array('id'=>$val['id']))}" title="{$val['title']}"><p class="item_detail_info">{$val['description']}</p></a>
+					</div>
+				</li>					
+		   	<else/>				   	
+				<li class="news_wrap_item1">
+					<a href="{:url('index/index_wap/news_info_wap',array('id'=>$val['id']))}" title="{$val['title']}"><p class="item_detail_title1">{$val['title']}</p></a>
+					<p class="item_detail_time">{$val['updatetime']|date="Y-m-d"}</p>
+				</li>					
+		   	</if>
+			</volist>	
+		</ul>
+	</div>
+</div>
+</if>
+
+
+<div class="wap_place">
+			<div class="wap_place_title">
+				<span></span>
+				<h2>地区专利申请</h2>
+				<span></span>
+			</div>
+			<div class="wap_place_name">
+				<a href="{:url('index/index_wap/place_wap',array('place'=>'北京'))}" title="地区服务"><div>北京</div></a>
+		        <a href="{:url('index/index_wap/place_wap',array('place'=>'上海'))}" title="地区服务"><div>上海</div></a>
+		        <a href="{:url('index/index_wap/place_wap',array('place'=>'浙江'))}" title="地区服务"><div>浙江</div></a>
+		        <a href="{:url('index/index_wap/place_wap',array('place'=>'天津'))}" title="地区服务"><div>天津</div></a>
+		        <a href="{:url('index/index_wap/place_wap',array('place'=>'江西'))}" title="地区服务"><div>江西</div></a>
+		        <a href="{:url('index/index_wap/place_wap',array('place'=>'四川'))}" title="地区服务"><div>四川</div></a>
+		        <a href="{:url('index/index_wap/place_wap',array('place'=>'重庆'))}" title="地区服务"><div>重庆</div></a>
+		        <a href="{:url('index/index_wap/place_wap',array('place'=>'河北'))}" title="地区服务"><div>河北</div></a>
+		        <a href="{:url('index/index_wap/place_wap',array('place'=>'山西'))}" title="地区服务"><div>山西</div></a>
+		        <a href="{:url('index/index_wap/place_wap',array('place'=>'河南'))}" title="地区服务"><div>河南</div></a>
+		        <a href="{:url('index/index_wap/place_wap',array('place'=>'辽宁'))}" title="地区服务"><div>辽宁</div></a>
+		        <a href="{:url('index/index_wap/place_wap',array('place'=>'海南'))}" title="地区服务"><div>海南</div></a>
+		        <a href="{:url('index/index_wap/place_wap',array('place'=>'贵州'))}" title="地区服务"><div>贵州</div></a>
+		        <a href="{:url('index/index_wap/place_wap',array('place'=>'甘肃'))}" title="地区服务"><div>甘肃</div></a>
+		        <a href="{:url('index/index_wap/place_wap',array('place'=>'厦门'))}" title="地区服务"><div>厦门</div></a>
+		        <a href="{:url('index/index_wap/place_wap',array('place'=>'青海'))}" title="地区服务"><div>青海</div></a>
+		        <a href="{:url('index/index_wap/place_wap',array('place'=>'云南'))}" title="地区服务"><div>云南</div></a>
+		        <a href="{:url('index/index_wap/place_wap',array('place'=>'陕西'))}" title="地区服务"><div>陕西</div></a>
+		        <a href="{:url('index/index_wap/place_wap',array('place'=>'温州'))}" title="地区服务"><div>温州</div></a>
+		        <a href="{:url('index/index_wap/place_wap',array('place'=>'温州'))}" title="地区服务"><div>杭州</div></a>
+			</div>
+		</div>
+		
+		<div class="pc_foot">
+			<div class="wap_lm">
+				<a href="{:url('index/index_wap/enterprise_wap')}"><span>高企认定</span></a>
+				<a href="{:url('index/index_wap/col_wap')}"><span>专利申请</span></a>
+				<a href=""><span>商标注册</span></a>
+				<a href=""><span>版权登记</span></a>
+				<a href=""><span>资质认证</span></a>
+				<a href=""><span>知产交易</span></a>
+				<a href=""><span>资金项目</span></a>
+				<a href=""><span>新闻资讯</span></a>
+			</div>
+			<div class="pc_wap_foot">
+				<div class="pc_wap_tel">全国免费服务热线
+				   <span class="tel">400-102-0176</span>
+				</div>
+				<div class="pc_wap_time">
+					<!--<img src="__IMG__/d10.jpg" /><br>-->
+					<img src="__IMG__/d11.jpg" />
+				</div>
+				<div class="pc_wap_ba">
+					<span>Copyright 2007-2020  <br>南昌大牛知识产权代理事务所  &nbsp;&nbsp; 江西大牛科技服务中心有限公司</span><br>
+					<span>ICP备案号：赣ICP备18012546号-1</span>
+				</div>
+				<div class="pc_wap_img">
+					<img src="__IMG__/40.jpg"/>
+					<img src="__IMG__/41.jpg"/>
+					<img src="__IMG__/42.jpg"/>
+					<img src="__IMG__/43.jpg"/>
+					<img src="__IMG__/44.jpg"/>
+					<img src="__IMG__/45.jpg"/>
+				</div>
+				<div class="pc_wap_lx">
+					<img src="__IMG__/wx.jpg"/>
+					<img src="__IMG__/wx.jpg"/>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class="footer_box"></div>
+		<section class="Customer clearfix">
+		    <div class="c clearfix">
+		        <a href="tel:400-102-0176" >
+		            <span class="iconA bg-sp-1"></span>
+		            <span>400-102-0176</span>
+		        </a>
+		    </div>
+		    <div class="k clearfix" >
+		        <a href="http://p.qiao.baidu.com/cps/chat?siteId=16064449&userId=28560838&siteToken=dcc4ffc25fa3cc17c112276a6aac426b"   rel="nofollow" target="_blank" rel="nofollow" target="_blank" >
+			        <span class="iconB bg-sp-k1"></span>
+			        <span style="color: #fff;">免费咨询</span>
+		        </a>
+		    </div>
+		</section>
+	</body>
+</html>

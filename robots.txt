@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /application/ad*/
+Sitemap: http://www.daniu666666.com/sitemap.xml
+Sitemap: http://www.daniu666666.com/sitemap.txt
+Sitemap: http://www.daniu666666.com/sitemap.html
+

@@ -1,0 +1,551 @@
+.cpointer {
+  cursor: pointer
+}
+
+.top {
+  height: 30px;
+  background: #E8E8E8
+}
+
+.top_inner {
+  background: #E8E8E8
+}
+
+.top_inner p {
+  float: left;
+  height: 28px;
+  line-height: 28px;
+  color: #666
+}
+
+.top_toolNav .mobileappdownload {
+  float: left;
+  height: 28px
+}
+
+.top_toolNav .mobileappdownload a {
+  display: block;
+  height: 28px;
+  line-height: 28px;
+  background: url(//www.ppdaicdn.com/2014/img/mobileicon.png) no-repeat 0 center;
+  padding-left: 20px;
+  font-size: 14px
+}
+
+.top_toolNav .pcflink a {
+  display: block;
+  height: 28px;
+  line-height: 28px;
+  background: url(//www.ppdaicdn.com/2014/img/pcficon.png) no-repeat 0 center;
+  padding-left: 20px;
+  font-size: 14px
+}
+
+.top_toolNav .pcflink a:hover {
+  color: #f60;
+  background: url(//www.ppdaicdn.com/2014/img/pcficon_hover.png) no-repeat 0 center
+}
+
+.mobileappdownload a:hover {
+  background: url(//www.ppdaicdn.com/2014/img/mobileicon_hover.png) no-repeat 0 center
+}
+
+.top_toolNav li.userservice,
+.top_toolNav li.forum {
+  height: 22px;
+  padding-top: 6px
+}
+
+.top_toolNav .userservice a,
+.top_toolNav .forum a {
+  display: block;
+  height: 16px;
+  line-height: 16px;
+  font-size: 14px
+}
+
+.top_toolNav .userservice a {
+  padding-right: 16px;
+  border-right: 1px #ccc solid
+}
+
+.top_toolNav {
+  float: right;
+  height: 28px;
+  margin-right: 10px
+}
+
+.top_toolNav li {
+  float: left;
+  margin-left: 20px;
+  position: relative;
+  z-index: 5;
+  border-top: 1px solid #e8e8e8
+}
+
+.top_toolNav li.ml08 {
+  margin-right: 20px
+}
+
+.top_toolNav li a {
+  float: left;
+  height: 28px;
+  line-height: 28px;
+  color: #666
+}
+
+.top_toolNav li a:hover {
+  color: #20a2e2
+}
+
+.top_toolNav li a i {
+  float: left;
+  height: 28px;
+  width: 20px;
+  background: url(//www.ppdaicdn.com/2014/img/ppdai2014Icon.png) no-repeat 4px 8px
+}
+
+.top_toolNav li.register a {
+  display: block;
+  width: 56px;
+  height: 20px;
+  line-height: 20px;
+  background: #39a1ea;
+  border: 1px #39a1ea solid;
+  text-align: center;
+  color: #E8E8E8
+}
+
+.top_toolNav li.register,
+.top_toolNav li.login {
+  margin-left: 15px;
+  padding-top: 3px
+}
+
+.top_toolNav li.register a:hover {
+  background: #2b92da;
+  border-color: #2b92da;
+  color: #e8e8e8
+}
+
+.top_toolNav li.login a {
+  display: block;
+  width: 56px;
+  height: 20px;
+  line-height: 20px;
+  background: #e8e8e8;
+  border: 1px #39a1ea solid;
+  text-align: center;
+  color: #39a1ea
+}
+
+.top_toolNav li.login a:hover {
+  background: #2b92da;
+  border-color: #2b92da;
+  color: #e8e8e8
+}
+
+.top_toolNav li.mr15 {
+  margin-right: 15px
+}
+
+.top_toolNav li span {
+  float: left;
+  height: 28px;
+  line-height: 28px;
+  color: #666
+}
+
+.top_toolNav li.hasStatusArrow {
+  border: 1px solid #e8e8e8;
+  border-bottom: 0;
+  margin-left: 2px;
+  padding: 0 6px
+}
+
+.top_toolNav li.current {
+  border: 1px solid #ebebeb;
+  border-bottom: 0
+}
+
+.top_toolNav li.exit {
+  margin-left: 7px
+}
+
+.top_toolNav li .statusArrow {
+  float: left;
+  background: url(../img/topstatus.png) no-repeat;
+  width: 10px;
+  height: 5px;
+  margin: 12px 0 0 5px
+}
+
+.top_toolNav li .statusArrowDown {
+  background-position: 0 -15px
+}
+
+.top_toolNav li .statusArrowUp {
+  background-position: 0 0
+}
+
+.top_toolNav li .subContent {
+  position: absolute;
+  top: 28px;
+  left: -1px;
+  border-top: 0;
+  display: none;
+  width: 100%
+}
+
+.top_toolNav li .subContent .subContentArrow {
+  width: 11px;
+  height: 6px;
+  display: block;
+  margin: 0 auto;
+  background: url(//www.ppdaicdn.com/2014/img/menuarrow.png) no-repeat center center;
+  position: relative;
+  z-index: 10
+}
+
+.top_toolNav li .subContent .subContentBox {
+  background: #fff;
+  border: 1px solid #ebebeb;
+  margin-top: -1px;
+  padding: 7px 0
+}
+
+.top_toolNav li .subContent a {
+  display: block;
+  text-align: center;
+  width: 78px;
+  line-height: 30px;
+  height: 30px;
+  float: none;
+  margin: 0 auto
+}
+
+.w1000center {
+  width: 1000px;
+  margin: 0 auto
+}
+
+.mainNav {
+  background: #F9F9F9;
+  height: 66px;
+  position: relative;
+  z-index: 4
+}
+
+.mainNav_inner {
+  background: #F9F9F9
+}
+
+.logo {
+  float: left;
+  height: 53px;
+  margin-top: 7px
+}
+
+.mainNav_loginReg {
+  float: right;
+  padding-top: 19px
+}
+
+.mainNav_loginReg a {
+  float: left;
+  width: 104px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 2px
+}
+
+.mainNav_login {
+  background: #EF8700
+}
+
+.mainNav_register {
+  background: #00A8FF;
+  margin-left: 20px
+}
+
+#tabIcon {
+  float: right
+}
+
+#tabIcon li {
+  color: #fff;
+  cursor: pointer;
+  float: left;
+  height: 30px;
+  list-style: none outside none;
+  margin-left: 20px;
+  text-align: center;
+  width: 90px;
+  position: relative;
+  z-index: 4;
+  margin-top: 22px
+}
+
+#tabIcon li a {
+  color: #333;
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  text-decoration: none;
+  width: 100px;
+  font-size: 16px
+}
+
+#tabIcon li .tabon,
+#tabIcon li:hover a {
+  border: 1px;
+  font-size: 16px;
+  color: #000d5b;
+  border-bottom: 3px solid #004098
+}
+
+#tabIcon li:hover .subMenu a {
+  font-size: 14px;
+  color: #333;
+  border: 0;
+  font-weight: 400
+}
+
+#tabIcon li .subMenu {
+  background: #fff;
+  position: absolute;
+  top: 33px;
+  left: 0;
+  border: 1px solid #D5D5D5;
+  width: 98px;
+  display: none
+}
+
+#tabIcon li .subMenu a {
+  color: #333;
+  font-size: 14px;
+  margin-top: 10px
+}
+
+#tabIcon li .subMenu a:hover {
+  font-size: 14px;
+  color: #333;
+  border: 0;
+  font-weight: 400;
+  text-decoration: underline
+}
+
+#tabIcon li .subMenu a.top-menu-userasset {
+  background: url(//www.ppdaicdn.com/2014/img/myaccount/hot.jpg) 80px center no-repeat
+}
+
+.breadcrumb {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 18px 0 5px
+}
+
+.breadcrumb ul {
+  padding: 5px 25px;
+  background: url(//www.ppdaicdn.com/2014/img/ppdai2014Icon.png) no-repeat -227px -108px;
+  float: left
+}
+
+.breadcrumb ul li {
+  float: left;
+  color: #666
+}
+
+.breadcrumb ul li a {
+  float: left;
+  height: 18px
+}
+
+.breadcrumb ul li span {
+  padding: 0 10px
+}
+
+.breadcrumb a.ppb {
+  height: 18px;
+  float: right;
+  color: #1D83CA;
+  line-height: 18px;
+  padding-top: 5px
+}
+
+.footer {
+  background: #E7EAED;
+  padding-bottom: 20px
+}
+
+.footer_footerBottom {
+  width: 1188px;
+  margin: 0 auto;
+  padding-top: 20px;
+  background: #E7EAED
+}
+
+.footer_footerBottomNav {
+  width: 712px;
+  margin: 0 auto
+}
+
+.footer_footerBottomNav li {
+  float: left;
+  margin-right: 20px;
+  height: 32px;
+  line-height: 32px;
+  color: #666
+}
+
+.footer_footerBottomNav li.nomr {
+  margin-right: 0
+}
+
+.footer_footerBottomNav li span,
+.footer_footerBottomNav li a {
+  float: left;
+  height: 32px;
+  line-height: 32px;
+  color: #666;
+  margin-right: 22px
+}
+
+.footer_footerBottomNav li span {
+  background: url(//www.ppdaicdn.com/2014/img/ppdai2014Icon.png) no-repeat;
+  width: 31px;
+  height: 31px;
+  margin-right: 14px
+}
+
+.footer_footerBottomNav li span.webindex {
+  background-position: 0 -47px
+}
+
+.footer_footerBottomNav li span.aboutus {
+  background-position: -77px -47px
+}
+
+.footer_footerBottomNav li span.mapsite {
+  background-position: -141px -47px
+}
+
+.footer_footerBottomNav li span.webservice {
+  background-position: -217px -47px
+}
+
+.footer_footerBottomNav li span.onlneserve {
+  background-position: -93px -103px
+}
+
+.footer_footerBottom p {
+  padding-top: 15px;
+  text-align: center;
+  color: #666;
+  margin-bottom: 10px
+}
+
+.formErrorMsg {
+  color: red;
+  display: none;
+  padding-left: 15px
+}
+
+
+
+.ppd_policy {
+  font-family: "Microsoft YaHei", å¾®è½¯é›…é»‘, "Microsoft JhengHei", åŽæ–‡ç»†é»‘, STHeiti, MingLiu;
+  width: 980px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 14px!important;
+  color: #404040
+}
+
+.ppd_policy h1 {
+  font-size: 36px;
+  width: 980px;
+  text-align: center;
+  color: #2e2e2e;
+  font-weight: 400;
+  margin: 15px 0
+}
+
+.ppd_policy .listnum {
+  vertical-align: top;
+  font-size: 22px;
+  color: #323232;
+  padding-top: 20px
+}
+
+.ppd_policy .lv2 {
+  color: #404040;
+  font-size: 14px;
+  text-align: right;
+  padding-right: 15px
+}
+
+.ppd_policy table {
+  font-size: 14px;
+  color: #404040
+}
+
+.ppd_policy table td {
+  padding: 15px 0
+}
+
+.ppd_policy table td p {
+  font-size: 20px;
+  line-height: 23px
+}
+
+.ppd_policy b {
+  color: #600605
+}
+
+.ppd_policy a {
+  color: #004098;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 23px
+}
+
+.font_yahei,
+p {
+  font-family: "Microsoft YaHei", å¾®è½¯é›…é»‘, "Microsoft JhengHei", åŽæ–‡ç»†é»‘, STHeiti, MingLiu!important
+}
+
+#law div {
+  color: #404040;
+  font-size: 14px;
+  margin: 20px 0;
+  padding-left: 45px
+}
+
+#law .head {
+  color: #404040;
+  font-size: 14px;
+  margin: 20px 0;
+  padding-left: 0
+}
+
+#law .lv2 {
+  padding-left: 23px;
+  text-align: left
+}
+
+#law p {
+  margin: 15px auto 8px;
+  font-size: 22px;
+  color: #323232
+}
+
+.center980 {
+    width: 980px;
+    margin: 0 auto;
+}

@@ -1,0 +1,73 @@
+{extend name="index_layout"/}
+{block name="main"}
+<div class="layui-card">
+	<div class="layui-card-header">编辑友情链接</div>
+    <div class="layui-card-body">
+        <form class="layui-form form-horizontal" action="{:url('admin/flink/edit')}" method="post">
+            <input type="hidden" name="id" value="{$data.id}" />
+            <div class="layui-form-item">
+                <label class="layui-form-label">友链名称</label>
+                <div class="layui-input-inline">
+                    <input value="{$data['name']}"   type="text" name="name" lay-verify="name" autocomplete="off" placeholder="友链名称" class="layui-input">
+                </div>
+                <!--<div class="layui-form-mid layui-word-aux"></div>-->
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">友链URL</label>
+                <div class="layui-input-inline">
+                    <input  value="{$data['url']}"  type="text" name="url" lay-verify="url" autocomplete="off" placeholder="友链URL" class="layui-input">
+                </div>
+                <!--<div class="layui-form-mid layui-word-aux">3-20位字符，可由英文、数字及标点符号组成</div>-->
+            </div>
+            
+            <div class="layui-form-item">
+                <label class="layui-form-label">排序</label>
+                <div class="layui-input-inline">
+                    <input  value="{$data['list_order']}"  type="text" name="list_order" lay-verify="list_order" autocomplete="off" placeholder="排序" class="layui-input">
+                </div>
+                <!--<div class="layui-form-mid layui-word-aux">请再次输入您的密码</div>-->
+            </div>
+            
+            <div class="layui-form-item">
+			    <label class="layui-form-label">状态&nbsp;<!--<font color="red">*</font>--></label>
+			    <div class="layui-input-inline">
+			        <input type="radio" name="status" value="1" title="启用" {if ($data['status']==1)}checked=''{/if}>
+			        <input type="radio" name="status" value="0" title="禁用" {if ($data['status']==0)}checked=''{/if}>
+			    </div> 
+			    <!--<div class="layui-form-mid layui-word-aux">状态</div>-->
+			 
+			</div>
+            
+            <div class="layui-form-item layui-form-text">
+                <label class="layui-form-label">友链图片</label>
+                <div class="layui-form-field-label layui-input-inline">
+                    <div class="js-upload-image">
+                        {php}echo \util\Form::images('image','',$data['image']){/php}
+                    </div>
+                </div>
+            </div>
+            
+            <!--<div class="layui-form-item">
+                <label class="layui-form-label">权限组</label>
+                <div class="layui-input-inline">
+                    <select name="roleid" lay-filter="roleid">
+                        {volist name="roles" id="vo"}
+                        <option value="{$vo['id']}">{$vo['title']}</option>
+                        {/volist}
+                    </select>
+                </div>
+            </div>-->
+            
+            <div class="layui-form-item">
+                <div class="layui-input-block">
+                    <input type="button" value="立即提交" class="layui-btn ajax-post" lay-submit="" lay-filter="*" target-form="form-horizontal">
+                    <input type="button" value="返回" class="layui-btn layui-btn-normal" onClick="javascript :history.back(-1);">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+{/block}
+{block name="script"}
+<script type="text/javascript" src="__STATIC__/admin/js/common.js"></script>
+{/block}

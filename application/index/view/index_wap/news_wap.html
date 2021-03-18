@@ -1,0 +1,50 @@
+<include file="public/wap_head" />
+
+<div class="banner img" style="margin: 0;">
+	<div>
+		<img src="__IMG__/ban1.jpg"/>
+	</div>
+</div>
+
+<div class="wap_zx wrap_news" style="margin-top: 0;"> 
+	
+	<div class="tabs__header">
+		<a href="{:url('index/index_wap/news_wap')}"><div <if (!$id)>class="native"</if>>全部</div></a>
+		<volist name="cate_list" id="val">
+		   <a href="{:url('index/index_wap/news_wap',array('id'=>$val['id']))}" title="{$val['catname']}"><div <if ($id==$val['id'])>class="native"</if>>{$val['catname']}</div></a>
+		</volist>
+	</div>
+	
+	<div>
+		<ul class="news_wrap">
+		   <volist name="list" id="val">   	
+				<div class="news_wrap_item2">
+					<div class="news_wrap_left">
+						<a href="{:url('index/index_wap/news_info_wap',array('id'=>$val['id']))}" title="{$val['title']}">
+						   <img  src="/public/uploads/{$val['path']}"/>
+						</a>
+					</div>
+					<div class="news_wrap_right">
+						<a href="{:url('index/index_wap/news_info_wap',array('id'=>$val['id']))}" title="{$val['title']}">
+							<p class="news_wrap_title">{$val['title']}</p>
+							<p class="news_wrap_description">{$val['description']}</p>
+							<p class="news_wrap_bottom">
+								<volist name="val['tags']" id="v" offset="0" length="3">
+                            		<span class="news_wrap_bottom_left">{$v}</span>
+                                </volist>
+								<span class="news_wrap_bottom_right">{$val['updatetime']|date="Y-m-d"}</span>
+							</p>
+						</a>
+					</div>
+					
+				</div>					
+			</volist>	
+		</ul>
+		
+		
+	</div>
+</div>
+
+
+
+<include file="public/wap_foot" />

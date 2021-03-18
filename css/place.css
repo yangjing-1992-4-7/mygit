@@ -1,0 +1,441 @@
+
+.jj{
+	line-height: 28px;
+}
+
+.jj h3 {
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 30px;
+    padding-top: 10px;
+}
+
+.jj h3 span {
+    display: block;
+    font-size: 38px;
+    color: #000;
+    padding-bottom: 14px;
+}
+
+.jj h3 i {
+    font-size: 14px;
+    color: #b4b4b4;
+    position: relative;
+    padding: 0 18px;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.jj h3 i:before,.hcd h3 i:before{
+    position: absolute;
+    width: 52px;
+    height: 1px;
+    background: #999;
+    content: "";
+    top: 8px;
+    left: -52px;
+}
+
+.jj h3 i:after,.hcd h3 i:after {
+    position: absolute;
+    width: 52px;
+    height: 1px;
+    background: #999;
+    content: "";
+    top: 8px;
+    right: -52px;
+}
+
+.zl dl {
+    overflow: hidden;
+}
+
+
+.zl dt {
+    width: 34%;
+    float: left;
+}
+
+.zl dt img{
+    width: 100%;
+    min-width: 300px;
+}
+
+.zl dd {
+    width: 64%;
+    float: left;
+    margin-left: 2%;
+    height: 370px;
+    background: #f6f6f6;
+}
+
+.zl dd p {
+    margin: 0;
+    margin-bottom: 7px;
+    font-size: 15px;
+    color: #000;
+    line-height: 33px;
+    margin-top: 6px;
+}
+
+.zl dd h4 {
+    color: #215291;
+    font-size: 16px;
+    margin-top: 21px;
+}
+
+.zl dd b {
+    display: block;
+    font-weight: normal;
+    margin-top: 8px;
+    color: #333;
+}
+
+.zl i {
+    background: #215392;
+    font-style: normal;
+    width: 205px;
+    display: block;
+    text-align: center;
+    padding: 7px 0;
+    border-radius: 15px;
+    margin: 20px auto;
+
+}
+.zl i a {
+    font-size: 20px;
+    color: #fff;
+}
+
+.content1 {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.hcd h3 {
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 30px;
+    padding-top: 50px;
+}
+
+.hcd h3 span {
+    display: block;
+    font-size: 38px;
+    color: #000;
+    padding-bottom: 14px;
+}
+
+.hcd h3 i {
+    font-size: 14px;
+    color: #b4b4b4;
+    position: relative;
+    padding: 0 18px;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.hcd b {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #da4b1f;
+}
+
+.hcd .hcd1 {
+    background: url(../img/back.jpg) no-repeat center center;
+    height: 328px;
+}
+
+.hcd dl {
+	position: relative;
+    clear: both;
+}
+
+.hcd dt {
+    width: 544px;
+    float: left;
+    margin-top: 25px;
+}
+
+.hcd dt h4 {
+    width: 61px;
+    float: left;
+    padding-left: 97px;
+    font-size: 25px;
+    line-height: 35px;
+    color: #fff;
+    margin: 0px;
+}
+
+.hcd dt p {
+    width: 352px;
+    float: left;
+    padding-left: 22px;
+    font-size: 16px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.hcd dd {
+    width: 500px;
+    float: left;
+    margin-left: 68px;
+    margin-top: 28px;
+}
+
+.hcd dd h4 {
+    width: 61px;
+    float: right;
+    font-size: 25px;
+    line-height: 35px;
+    color: #fff;
+    margin: 0px;
+}
+
+.hcd dd p {
+    width: 321px;
+    float: left;
+    padding-left: 87px;
+    font-size: 16px;
+    color: #333;
+    margin: 7px 0;
+}
+
+
+.container {
+    width: 1210px;
+    margin: 0 auto;
+}
+
+.zuti-h1 {
+    text-align: center;
+    padding-top: 80px;
+}
+
+.zuti-hei p {
+    color: #252525 !important;
+}
+
+.zuti-hei span {
+    color: #141414 !important;
+}
+
+.zu-tuanti {
+	overflow: hidden;
+    font-size: 16px;
+    color: #5c5c5c;
+    margin-top: 24px;
+    text-align: center;
+}
+
+.zu-tuanti h5 {
+    font-size: 20px;
+    color: #262626;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.zu-tuanti ul {
+    padding-left: 0px;
+    list-style: none;
+    overflow: hidden;
+}
+
+.zu-tuanti li {
+    float: left;
+    width: 33.33%;
+    border-right: 1px solid #b5b5b5;
+    height: 238px;
+    overflow: hidden;
+    border: 3px solid transparent;
+    margin-left: -6px;
+    position: relative;  
+}
+
+.zu-tuanti1 li {
+    float: left;
+    width: 25%;
+    border-right: 1px solid #b5b5b5;
+    height: 200px;
+    overflow: hidden;
+    border: 3px solid transparent;
+    margin-left: -6px;
+    position: relative;  
+}
+
+
+.box{
+	box-sizing: border-box;
+}
+
+.zu-tuanti li p {
+    line-height: 45px;
+    color: #ffffff;
+    font-size: 20px;
+    background: #215392;
+}
+
+.zu-tuanspan {
+    text-align: left;
+    background: #f8f8f8;
+    height: 193px;
+    padding-top: 30px;
+}
+
+.zu-tuanti1 .zu-tuanspan {
+    text-align: left;
+    background: #f8f8f8;
+    height: 150px;
+    padding-top: 30px;
+}
+
+
+.zu-tuanspan span {
+    display: block;
+    font-size: 16px;
+    color: #373737;
+    line-height: 32px;
+    position: relative;
+    margin-left: 140px;
+    width: 210px;
+    padding-left: 15px;
+}
+
+.zu-tuanti1 .zu-tuanspan span {
+    display: block;
+    font-size: 16px;
+    color: #373737;
+    line-height: 32px;
+    position: relative;
+    margin-left: 100px;
+    width: 210px;
+    padding-left: 15px;
+}
+
+
+.zu-tuanspan em {
+    position: absolute;
+    top: 13px;
+    left: 0;
+    width: 5px;
+    height: 5px;
+    background: #74523e;
+    border-radius: 50%;
+}
+
+.zuti-hei p {
+    color: #252525 !important;
+}
+.zuti-h1 p {
+    color: #fff;
+    font-size: 38px;
+    font-weight: bold;
+    opacity: 0.2;
+    filter: Alpha(opacity=20);
+    text-transform: uppercase;
+    margin-bottom: -27px;
+}
+
+.zuti-hei span {
+    color: #141414 !important;
+}
+
+.zuti-h1 span {
+    font-size: 35px;
+}
+
+.abo {
+    padding-bottom: 40px;
+    color: #666666;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.fl {
+    float: left;
+    padding: 0 10px;
+}
+
+.abo .fr {
+    position: relative;
+    padding: 19px 76px 0 0;
+}
+
+.fr {
+    float: right;
+}
+
+.abo h2 {
+    font-size: 30px;
+    color: #666666;
+}
+
+.abo h3 {
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 25px;
+}
+
+.abo .line {
+    background-color: rgb(40, 126, 219);
+    margin-bottom: 35px;
+}
+
+.line {
+    width: 28px;
+    height: 3px;
+    background: #ffffff;
+}
+
+.abo h4 {
+    margin-bottom: 41px;
+}
+
+.abo p {
+    max-width: 584px;
+    line-height: 30px;
+    margin-bottom: 37px;
+}
+
+.abo .more {
+    padding: 11px 30px;
+    border: 1px solid #666666;
+    display: inline-block;
+}
+
+.abo .fr .img-1 {
+    border: 6px solid #ffffff;
+    position: absolute;
+    z-index: 100;
+    right: 203px;
+    width: 299px;
+    height: 334px;
+    top: 129px;
+}
+
+#fullmeasureTopForms{
+	max-width: 1210px;
+	margin: 0px auto;
+}
+
+.chax-shen {
+    width: 448px !important;
+    height: 453px !important;
+    padding: 20px !important;
+
+}
+
+.place_center{
+	position: absolute;
+	top: 30px;
+	left: 595px;
+	font-size: 20px;
+	font-weight: 600;
+	color: #215392;
+}

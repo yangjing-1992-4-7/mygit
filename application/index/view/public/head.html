@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta  charset="utf-8">
+		<meta  name="viewport" content="width=device-width, initial-scale=1">
+		<meta  data-hid="meta-key-words" name="keywords" content="{:config('site_keyword')}">
+		<meta  name="description" content="{:config('site_description')}">
+		<meta http-equiv="Expires" content="0">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta http-equiv="Cache-control" content="no-cache">
+		<meta http-equiv="Cache" content="no-cache">
+		<title>{:config('site_title')}</title>
+        <link rel="stylesheet" type="text/css" href="__CSS__/in.css"/>
+        <script src="__JS__/jquery-1.8.2.min.js"></script>
+        <link rel="stylesheet" href="__JS__/swiper-6.1.2/package/swiper-bundle.css">
+		<script src="__JS__/swiper-6.1.2/package/swiper-bundle.min.js"></script>
+		<script src="__JS__/sweetalert/js/sweetalert.min.js"></script>
+		<script src="__JS__/in.js"></script>
+	</head>
+	<body >
+		<div  id="__nuxt">
+			<div class="nuxt-progress" style="width:0%;height:2px;background-color:#39a1ea;opacity:0;"></div>
+			<div id="__layout">
+				<div>
+					<div>
+						<div class="index-header">
+							
+							<div class="sec-head">
+								<div class="nav-logo">
+									<a href="__ROOT__" aria-current="page" class="logo nuxt-link-exact-active link-active"> </a>
+								</div>
+								<ul class="nav-menu">
+									<li class="has-submenu">
+										<a href="__ROOT__" target="_self"   >首页</a>
+									</li>	
+									<li class="has-submenu <if $Request.action=='borrow'||$Request.action=='detail'>active</if>">
+										<a href="{:url('index/borrow')}" target="_self">我要借款</a>
+										
+									</li>
+									<li class="has-submenu <if $Request.action=='repay'>active</if>">
+										<a href="{:url('index/repay')}" target="_self">我要出借</a>
+									</li>
+									<li class="has-submenu <if $Request.action=='question'>active</if>">
+										<a href="{:url('index/question')}" target="_self">常见问题</a>
+									</li>
+									<li class="has-submenu <if $Request.action=='about'>active</if>">
+										<a href="{:url('index/about')}" target="_self">关于我们</a>
+									</li>
+								</ul>
+								<div class="login-wrap">
+									<div class="login-btn-outer">
+										<div class="login-btn">
+											<a href="{:url('index/login')}" style="color: #ffffff">登录 </a>/ 
+											<a href="{:url('index/reg')}" style="color: #ffffff">注册 </a>
+										</div>
+									</div>
+								</div>
+								<span>
+									<div role="tooltip" id="el-popover-8681" aria-hidden="true" class="el-popover el-popper" style="width:undefinedpx;display:none;">
+										<div slot="" class="logined-spread">
+											<a href="{:url('index/loginout')}">退出登录</a>
+										</div>
+									</div>
+								</span>
+							</div>
+							<div class="sub-menu-bg" style="display:none;"></div>
+						</div>
